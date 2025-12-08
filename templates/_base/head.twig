@@ -1,0 +1,26 @@
+<head>
+	<meta charset="utf-8">
+	<link rel="home" href="{{ craft.app.request.absoluteUrl }}">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="/assets/css/main.css?v=1.1">
+
+	{% if craft.app.config.env != 'production' %}
+		<meta name="robots" content="noindex" />
+	{% endif %}
+
+	<!-- Seo -->
+	{% include "_base/meta" %}
+
+	<!-- Viewport -->
+	<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1">
+
+	<!-- FAVICONS -->
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+	<link rel="apple-touch-icon" href="/assets/images/favicons/apple-touch-icon.png">
+	<link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+	<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#fd3443">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+</head>

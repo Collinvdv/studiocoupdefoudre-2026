@@ -1,0 +1,24 @@
+fieldLayouts:
+  dfe7cfe3-41ac-43af-a475-ad912e1dd329:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4ba47aec-1758-4437-bcd2-775fc3066311 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4cc7ab7a-da72-4edc-840e-c63a2964d452
+            userCondition: null
+            warning: null
+            width: 100
+        name: Url
+        uid: 6fa1b1ff-d47f-4c82-991d-5fae86633a87
+        userCondition: null
+handle: globalLinkedin
+name: linkedIn
+sortOrder: 4

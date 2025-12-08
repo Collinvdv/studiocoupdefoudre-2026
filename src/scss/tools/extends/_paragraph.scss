@@ -1,0 +1,27 @@
+// =============================================================================
+// :: P
+// =============================================================================
+@mixin extend-paragraph-base() {
+	font-family: $font-family-secondary;
+	font-weight: $font-weight-light;
+	font-size: $font-size-1x-small;
+	line-height: $line-height-default;
+
+	color: $black;
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		font-size: $font-size-base;
+	}
+}
+
+// =============================================================================
+// :: Small
+// =============================================================================
+@mixin extend-small-base() {
+	font-family: $font-family-secondary;
+	font-weight: $font-weight-normal;
+	font-size: $font-size-2x-small;
+	line-height: $line-height-default;
+
+	color: $black;
+}

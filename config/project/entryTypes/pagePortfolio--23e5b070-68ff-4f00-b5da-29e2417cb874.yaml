@@ -1,0 +1,118 @@
+fieldLayouts:
+  17c301c6-0f2c-43b6-af70-6a0cc4ee1a2f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 23625733-49e6-4ebb-bbc9-66343e6cbecb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 71ace60b-1def-4289-b954-835d70c7f96f # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c281dec1-c83e-4949-9d0c-67c4f4a8dd84
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5705b456-77ec-47e8-8e23-19798b3e4884 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 72cf0182-748f-41ad-991b-20dd98e704a7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4ba47aec-1758-4437-bcd2-775fc3066311 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 40d6ff32-cf27-48eb-b01a-3e9b6c519628
+            userCondition: null
+            warning: null
+            width: 100
+        name: General
+        uid: b4202a97-0a13-4abf-9181-26561abf689f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f31da9ea-4646-4253-8396-66574a04e1e0 # Portfolio Albums
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4746651f-4d2b-42f8-9149-e682b8046045
+            userCondition: null
+            warning: null
+            width: 100
+        name: Body
+        uid: 9ae87410-c676-4ac7-b3f8-cfdc06dd88c0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0659686e-097b-4429-827c-0abdf454b88a # Seo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c5a3f334-a308-4dca-ac02-0b3efef3012e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Seo
+        uid: c88e1ac0-bfec-46c2-8c9b-1a74739c795e
+        userCondition: null
+handle: pagePortfolio
+hasTitleField: false
+name: Portfolio
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{commonTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,109 @@
+// =============================================================================
+// :: H1
+// =============================================================================
+@mixin extend-h1-base() {
+	font-family: $font-family-primary;
+	font-weight: $font-weight-normal;
+	font-size: $font-size-5x-large;
+	line-height: $line-height-normalize;
+
+	color: $black;
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		font-size: $font-size-6x-large;
+	}
+}
+
+// =============================================================================
+// :: H2
+// =============================================================================
+@mixin extend-h2-base() {
+	font-family: $font-family-primary;
+	font-weight: $font-weight-normal;
+	font-size: $font-size-5x-large;
+	line-height: $line-height-normalize;
+	letter-spacing: 0.4rem;
+
+	color: $black;
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		font-size: $font-size-6x-large;
+	}
+}
+
+// =============================================================================
+// :: H3
+// =============================================================================
+@mixin extend-h3-base() {
+	font-family: $font-family-primary;
+	font-weight: $font-weight-normal;
+	font-size: $font-size-3x-large;
+	line-height: $line-height-normalize;
+	letter-spacing: 0.3rem;
+
+	color: $black;
+
+	@include respond-at(get-breakpoint("viewport-4")) {
+		font-size: $font-size-4x-large;
+	}
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		font-size: $font-size-5x-large;
+	}
+}
+
+// =============================================================================
+// :: H4
+// =============================================================================
+@mixin extend-h4-base() {
+	font-family: $font-family-primary;
+	font-weight: $font-weight-bold;
+	font-size: $font-size-1x-large;
+	line-height: $line-height-normalize;
+
+	color: $black;
+
+	@include respond-at(get-breakpoint("viewport-4")) {
+		font-size: $font-size-2x-large;
+	}
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		font-size: $font-size-3x-large;
+	}
+}
+
+// =============================================================================
+// :: H5
+// =============================================================================
+@mixin extend-h5-base() {
+	font-family: $font-family-primary;
+	font-weight: $font-weight-normal;
+	font-size: $font-size-base;
+	line-height: $line-height-normalize;
+
+	color: $black;
+
+	@include respond-at(get-breakpoint("viewport-4")) {
+		font-size: $font-size-1x-large;
+	}
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		font-size: $font-size-2x-large;
+	}
+}
+
+// =============================================================================
+// :: H6
+// =============================================================================
+@mixin extend-h6-base() {
+	font-family: $font-family-primary;
+	font-weight: $font-weight-normal;
+	font-size: $font-size-base;
+	line-height: $line-height-normalize;
+
+	color: $black;
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		font-size: $font-size-1x-large;
+	}
+}

@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: mxBlockTitle
+instructions: 'This is the title above the component'
+name: 'Body - Text - Block title'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 255
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

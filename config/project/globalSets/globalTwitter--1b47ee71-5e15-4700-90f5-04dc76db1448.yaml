@@ -1,0 +1,24 @@
+fieldLayouts:
+  c2027a4c-8a1a-4656-89f6-59dd318257c8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4ba47aec-1758-4437-bcd2-775fc3066311 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c4a3fa2f-26bf-4523-86b2-0ba45608e123
+            userCondition: null
+            warning: null
+            width: 100
+        name: Url
+        uid: d9e231f6-775d-48f8-9895-f7c2dba37fa5
+        userCondition: null
+handle: globalTwitter
+name: twitter
+sortOrder: 5

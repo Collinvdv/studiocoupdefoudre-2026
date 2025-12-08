@@ -1,0 +1,31 @@
+{# ========================================================================== #}
+{# :: Variables #}
+{# ========================================================================== #}
+{% set title = data.sectionTitle ?? null %}
+{% set description = data.sectionDescription ?? null %}
+{% set link = data.sectionLink ?? null %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+<section class="l-container c-home__cta">
+	<div class="c-home__cta-content">
+		<header class="c-home__cta-header">
+			<h2 class="c-home__cta-title">
+				{{ title }} 
+			</h2>
+		</header>
+
+		<div class="c-home__cta-description">
+			{{ description }}
+		</div>
+
+		<a class="c-home__cta-link c-link c-link--primary" href="{{ link.getUrl() }}">
+			{{ link.label }}
+
+			<span class="c-link__icon">
+				{% include "_svg/arrow-right.svg" %}
+			</span>
+		</a>
+	</div>
+</section>

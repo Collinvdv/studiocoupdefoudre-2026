@@ -1,0 +1,61 @@
+{# ========================================================================== #}
+{# Inheritance #}
+{# ========================================================================== #}
+{% extends "_base/layout" %}
+
+{# ========================================================================== #}
+{# :: Variables #}
+{# ========================================================================== #}
+{% set activePage = "prijzen" %}
+
+{# ========================================================================== #}
+{# Content #}
+{# ========================================================================== #}
+{% block content %}
+
+	{% cache globally using key 'single-prijzen' if not craft.app.config.general.devMode  %}
+		<section class="l-container js-appear">
+			<header class="c-header s-wysiwyg-header">
+				<h2 class="c-header__title">{{ entry.commonTitle }}</h2>
+
+				{{ entry.commonDescription }}
+
+				<a class="c-header__link c-link c-link--primary" href="{{entry.commonLink}}">
+					{{entry.commonLink.label}}
+
+					<span class="c-link__icon">
+						{% include "_svg/arrow-right.svg" %}
+					</span>
+				</a>
+			</header>
+
+			<div class="c-prijzen">
+				{% for item in entry.prices.all() %}
+					<article class="c-prijs">
+						{% if item.priceImage.one() %}
+							<div
+								class="c-prijs__image"
+								style="background-image: url({{item.priceImage.one().url}})">
+								<img
+									class="u-hide"
+									src="{{item.priceImage.one().url}}"
+								/>
+							</div>
+						{% endif %}
+
+						<h3 class="c-prijs__title">{{item.priceTitle}}</h3>
+
+						<p class="c-prijs__meta">
+							<span class="c-prijs__duration">{{item.priceDuration}}</span>
+
+							<span class="c-prijs__amount">€ {{item.priceAmount}}</span>
+						</p>
+
+						<p class="c-prijs__info">{{item.priceInfo}}</p>
+					</article>
+				{% endfor %}
+			</div>
+		</section>
+	{% endcache %}
+
+{% endblock %}

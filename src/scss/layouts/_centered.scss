@@ -1,0 +1,40 @@
+// =============================================================================
+// :: Horzizontally & vertically centered page
+// =============================================================================
+.l-centered {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 50rem;
+
+	margin: auto;
+	padding: 0 2.4rem;
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		padding: 0;
+	}
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.l-centered__header {
+
+	> * {
+		text-align: center;
+	}
+}
+
+.l-centered__item {
+	margin: 1.2rem auto;
+
+	font-style: normal;
+	text-align: center;
+
+	color: $black;
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		margin: 1.6rem auto;
+	}
+}

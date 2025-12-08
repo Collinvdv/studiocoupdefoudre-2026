@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: sectionProjects
+instructions: 'Add your 3 most recent projects, or the projects you want to put in the spotlight.'
+name: 'Home Body Blocks - Home Shoots Block - Projects'
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: 3
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedEntries: true
+  showUnpermittedSections: true
+  sources:
+    - 'section:ef6f29f0-9c10-4f94-99e9-24d3aaea6646' # Projects
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

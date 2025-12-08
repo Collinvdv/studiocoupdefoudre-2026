@@ -1,0 +1,87 @@
+// =============================================================================
+// :: Settings
+// =============================================================================
+$indent-padding: calc((100vw - #{$container-width-base}) * 0.5);
+
+// =============================================================================
+// :: Container
+// =============================================================================
+.l-container {
+	width: calc(100% - (#{get-viewport-spacing("viewport-3")} * 2));
+	max-width: $container-width-base;
+	margin: 0 auto;
+
+	@each $breakpoint, $params in trim-to($breakpoints, "viewport-7") {
+		$viewport-spacing: map-get($params, viewport-spacing);
+
+		@include respond-at(get-breakpoint($breakpoint)) {
+			width: calc(100% - (#{$viewport-spacing} * 2));
+		}
+	}
+}
+
+// =============================================================================
+// :: Modifiers
+// =============================================================================
+.l-container\@viewport-7 {
+	width: calc(100% - (#{get-viewport-spacing("viewport-7")} * 2));
+	max-width: $container-width-base;
+	margin: 0 auto;
+
+	@include respond-to(get-breakpoint("viewport-7")) {
+		width: 100%;
+	}
+
+	@include respond-at(get-breakpoint("viewport-9")) {
+		$viewport-spacing: get-viewport-spacing("viewport-9");
+
+		width: calc(100% - (#{$viewport-spacing} * 2));
+	}
+
+	@include respond-at(get-breakpoint("viewport-12")) {
+		$viewport-spacing: get-viewport-spacing("viewport-12");
+
+		width: calc(100% - (#{$viewport-spacing} * 2));
+	}
+}
+
+.l-container\@viewport-9 {
+	width: calc(100% - (#{get-viewport-spacing("viewport-9")} * 2));
+	max-width: $container-width-base;
+	margin: 0 auto;
+
+	@include respond-to(get-breakpoint("viewport-9")) {
+		width: 100%;
+	}
+
+	@include respond-at(get-breakpoint("viewport-9")) {
+		$viewport-spacing: get-viewport-spacing("viewport-9");
+
+		width: calc(100% - (#{$viewport-spacing} * 2));
+	}
+
+	@include respond-at(get-breakpoint("viewport-12")) {
+		$viewport-spacing: get-viewport-spacing("viewport-12");
+
+		width: calc(100% - (#{$viewport-spacing} * 2));
+	}
+}
+
+.l-container\:indent-left {
+	max-width: unset;
+	padding-left: get-viewport-spacing("viewport-3");
+
+	@each $breakpoint, $params in trim-to($breakpoints, "viewport-4") {
+		$viewport-spacing: map-get($params, viewport-spacing);
+
+		@include respond-at(get-breakpoint($breakpoint)) {
+			width: 100%;
+			padding-left: #{$viewport-spacing};
+		}
+	}
+
+	@include respond-at(px($container-width-base)) {
+		width: 100%;
+		padding-left: $indent-padding;
+	}
+}

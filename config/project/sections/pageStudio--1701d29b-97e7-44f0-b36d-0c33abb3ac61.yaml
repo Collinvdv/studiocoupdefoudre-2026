@@ -1,0 +1,20 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 4f9a5ad9-0f0f-415b-a5bf-2345427435bb # Page studio
+handle: pageStudio
+maxAuthors: 1
+name: 'Page studio'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  fc09fd9c-5a1a-4c16-97e8-a208d962d92b: # Studio Coup De Foudre
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/studio/index
+    uriFormat: studio
+type: single

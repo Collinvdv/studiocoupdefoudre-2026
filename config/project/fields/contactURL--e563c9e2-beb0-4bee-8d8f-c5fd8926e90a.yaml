@@ -1,0 +1,44 @@
+columnSuffix: null
+handle: contactURL
+instructions: 'A link. Could be a website, phone number or email.'
+name: 'ContactData - ContactLink - URL'
+searchable: true
+settings:
+  fullGraphqlData: true
+  maxLength: 255
+  showLabelField: true
+  typeSettings:
+    __assoc__:
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+            -
+              - showUnpermittedSections
+              - ''
+            -
+              - showUnpermittedEntries
+              - ''
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - allowRootRelativeUrls
+              - ''
+            -
+              - allowAnchors
+              - ''
+            -
+              - allowCustomSchemes
+              - ''
+  types:
+    - entry
+    - url
+    - email
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

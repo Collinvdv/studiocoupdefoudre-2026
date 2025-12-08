@@ -1,0 +1,134 @@
+// =============================================================================
+// :: Home
+// =============================================================================
+// .c-home {}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-home__hero {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 40vh;
+	padding: 4rem;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		height: 60rem;
+	}
+}
+
+.c-home__hero-quote {
+	display: none;
+	padding-left: 1.2rem;
+
+	font-size: 2rem;
+	font-style: italic;
+
+	color: $grey-extra-light;
+	border-left: solid 0.1rem $grey-extra-light;
+
+	@include respond-at(get-breakpoint("viewport-9")) {
+		display: block;
+		margin-left: 1.6rem;
+	}
+}
+
+.c-home__projects,
+.c-home__cta {
+	margin-top: 4rem;
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		z-index: 9999;
+
+		width: 100%;
+		height: 100%;
+
+		background-color: $white;
+
+		transform-origin: 50% 100%;
+		transform: scaleY(0);
+
+		transition: 0.8s transform 0.3s ease-in-out;
+	}
+
+	&.is-hidden {
+
+		&::before {
+			transform: scaleY(1);
+		}
+	}
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		margin-top: 8rem;
+
+		&:last-child {
+			margin-bottom: 4rem;
+		}
+	}
+}
+
+.c-home__projects {
+	@include respond-at(get-breakpoint("viewport-9")) {
+		display: flex;
+	}
+}
+
+.c-home__projects-description,
+.c-home__projects-link {
+	margin-top: 1.6rem;
+}
+
+.c-home__projects-portfolio {
+	padding: 0;
+}
+
+.c-home__projects-header {
+
+	@include respond-at(get-breakpoint("viewport-9")) {
+		margin-right: get-viewport-spacing("viewport-9");
+	}
+}
+
+.c-home__cta {
+	padding: 6.8rem 2.4rem;
+
+	text-align: center;
+
+	background-color: $grey-extra-light;
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		padding: 8rem;
+	}
+}
+
+.c-home__cta-content {
+	max-width: 60rem;
+	margin: auto;
+}
+
+.c-home__cta-title {
+	font-size: $font-size-4x-large;
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		font-size: $font-size-5x-large;
+	}
+}
+
+.c-home__cta-description {
+	margin-top: 1.6rem;
+}
+
+.c-home__cta-link {
+	margin-top: 1.6rem;
+}

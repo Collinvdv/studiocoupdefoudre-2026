@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl-BE" id="html">
+
+	{% include '/_base/head'%}
+
+	<body id="body">
+
+		{% if craft.app.config.env == 'production' %}
+			<!-- Google Tag Manager (noscript) -->
+			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSZ25K"
+							  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<!-- End Google Tag Manager (noscript) -->
+		{% endif %}
+
+		<div class="l-page">
+			{% include '/_components/header' %}
+
+			{% minify %}
+				{% block content %}
+
+				{% endblock %}
+			{% endminify %}
+
+			{% include '/_components/footer' %}
+		</div>
+
+		{% include '/_base/foot' %}
+	</body>
+</html>

@@ -1,0 +1,51 @@
+{# ========================================================================== #}
+{# :: Variables #}
+{# ========================================================================== #}
+{% set title = data.sectionTitle ?? null %}
+{% set description = data.sectionDescription ?? null %}
+{% set projects = data.sectionProjects.all() ?? null %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+<section class="l-container c-home__projects">
+	<header class="c-home__projects-header">
+		<h2 class="c-home__projects-title">
+			{{ title }}
+		</h2>
+
+		<div class="c-home__projects-description">
+			{{ description }}
+		</div>
+
+		<a class="c-home__projects-link c-link c-link--primary" href="/portfolio">
+			Volledig portfolio
+
+			<span class="c-link__icon">
+				{% include "_svg/arrow-right.svg" %}
+			</span>
+		</a>
+	</header>
+
+	<ul class="c-home__projects-portfolio c-portfolio c-portfolio--horizontal u-margin-bottom-2@to-viewport-9">
+		{% for album in projects %}
+			<li class="c-portfolio__item">
+				<a
+					class="c-portfolio__item-link"
+					href="{{ album.getUrl() }}"
+					style="background-image: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.5)), url({{ album.commonHeaderImage.one().url }});"
+				>
+					{% if album.commonCategory %}
+						<span class="c-portfolio__item-category" aria-label="Categorie">
+							{{ album.commonCategory }}
+						</span>
+					{% endif %}
+
+					<span class="c-portfolio__item-title">
+						{{ album.commonTitle }}
+					</span>
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</section>

@@ -1,0 +1,20 @@
+columnSuffix: null
+contentColumnType: string
+handle: contactData
+instructions: null
+name: ContactData
+searchable: true
+settings:
+  entryTypes:
+    -
+      uid: 44915fd9-6407-425f-ae46-c86aeb7ab484
+    -
+      uid: 04a0b3f3-a5f0-462b-ad79-2e6215a7a30d
+  maxEntries: null
+  minEntries: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

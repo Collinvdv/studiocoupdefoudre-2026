@@ -1,0 +1,50 @@
+{# ========================================================================== #}
+{# Inheritance #}
+{# ========================================================================== #}
+{% extends "_base/layout" %}
+
+{# ========================================================================== #}
+{# :: Variables #}
+{# ========================================================================== #}
+{% set activePage = "contact" %}
+
+{# ========================================================================== #}
+{# Content #}
+{# ========================================================================== #}
+{% block content %}
+
+	{% cache globally using key 'single-contact' if not craft.app.config.general.devMode  %}
+
+		<section class="l-centered l-container">
+			<header class="c-header l-centered__header">
+				<h2 class="c-header__title">{{ entry.commonTitle }}</h2>
+
+				<p class="c-header__intro">
+					{{ entry.commonDescription }}
+				</p>
+			</header>
+
+			{% for item in entry.contactData.all() %}
+				{% switch item.type %}
+					{% case "contactLink" %}
+						<a
+							class="l-centered__item c-link"
+							href="{{item.contactURL}}">{{item.contactURL.label}}</a>
+
+					{% case "contactText" %}
+						<p class="l-centered__item">
+							{% set contactText = item.contactText|nl2br %}
+
+							{{contactText|raw}}
+						</p>
+					{% endswitch %}
+			{% endfor %}
+
+			{% include "/_components/socials.twig" with {
+				classes: "c-footer__socials l-centered__item"
+			} only %}
+		</section>
+
+	{% endcache %}
+
+{% endblock %}

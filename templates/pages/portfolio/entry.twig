@@ -1,0 +1,71 @@
+{# ========================================================================== #}
+{# Inheritance #}
+{# ========================================================================== #}
+{% extends "_base/layout" %}
+
+{# ========================================================================== #}
+{# Variables #}
+{# ========================================================================== #}
+{% set transform = {
+		mode: 'fit',
+		width: 800,
+		height: 800,
+		quality: 100,
+		position: 'center-center'
+	}
+%}
+
+{% set activePage = "portfolio" %}
+
+{# ========================================================================== #}
+{# Content #}
+{# ========================================================================== #}
+{% block content %}
+
+	{% cache globally using key 'single-porfolio' if not craft.app.config.general.devMode  %}
+		<section class="l-container js-appear">
+			<header class="c-header s-wysiwyg-header">
+				<h2 class="c-header__title">{{ entry.commonTitle }}</h2>
+
+				{{ entry.commonDescription }}
+
+				<a class="c-header__link c-link c-link--primary" href="{{entry.commonLink}}">
+					{{entry.commonLink.label}}
+
+					<span class="c-link__icon">
+						{% include "_svg/arrow-right.svg" %}
+					</span>
+				</a>
+			</header>
+
+			{% if entry.projectAlbums and entry.projectAlbums|length > 0 %}
+				<ul class="c-portfolio u-margin-bottom-4@at-viewport-7">
+					{% for album in entry.projectAlbums.all()|reverse %}
+						<li class="c-portfolio__item">
+							<a
+								class="c-portfolio__item-link"
+								href="{{ album.getUrl() }}"
+								style="background-image: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.5)), url({{ album.commonHeaderImage.one().url }});"
+							>
+								{% if album.commonCategory %}
+									<span class="c-portfolio__item-category" aria-label="Categorie">
+										{{ album.commonCategory }}
+									</span>
+								{% endif %}
+
+								<span class="c-portfolio__item-title">
+									{{ album.commonTitle }}
+								</span>
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			{% else %}
+				<p class="c-portfolio:empty">
+					Ik ben momenteel alles mooi in albums aan het gieten! Kom later eens terug om ze in te kijken!
+				</p>
+			{% endif %}
+		</section>
+	{% endcache %}
+
+{% endblock %}

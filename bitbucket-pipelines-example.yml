@@ -1,0 +1,17 @@
+# Only use spaces to indent your .yml configuration.
+clone:
+  depth: 1
+
+#pipelines:
+#  branches:
+#    develop:
+#      - step:
+#          name: Update the staging site
+#          deployment: staging   # can be test, staging or production
+#          script:
+#              - ssh $COMBELL_USER@$COMBELL_SERVER -T -t "cd $STAGING_PROJECT_LOCATION ; git checkout ."
+#              - ssh $COMBELL_USER@$COMBELL_SERVER -T -t "cd $STAGING_PROJECT_LOCATION ; git pull origin develop"
+#              - ssh $COMBELL_USER@$COMBELL_SERVER -T -t "cd $STAGING_PROJECT_LOCATION ; npm run build"
+#              - ssh $COMBELL_USER@$COMBELL_SERVER -T -t "cd $STAGING_PROJECT_LOCATION ; ./craft migrate/all"
+#              - ssh $COMBELL_USER@$COMBELL_SERVER -T -t "cd $STAGING_PROJECT_LOCATION ; ./craft project-config/sync"
+#              - ssh $COMBELL_USER@$COMBELL_SERVER -T -t "cd $STAGING_PROJECT_LOCATION ; ./craft clear-caches/all"

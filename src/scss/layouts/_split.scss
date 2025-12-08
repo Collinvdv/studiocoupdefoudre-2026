@@ -1,0 +1,37 @@
+// =============================================================================
+// :: A page width 2 equal columns on desktop
+// =============================================================================
+.l-split {
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.l-split__item {
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		width: calc(100% / 2);
+	}
+}
+
+// =============================================================================
+// :: Modifiers
+// =============================================================================
+.l-split__item--right {
+	@include respond-at(get-breakpoint("viewport-7")) {
+		padding: 4rem;
+	}
+
+	@include respond-at(get-breakpoint("viewport-9")) {
+		padding: 4rem 4rem 4rem 5.6rem;
+	}
+
+	@include respond-at(get-breakpoint("viewport-12")) {
+		padding: 4rem 4rem 4rem 8rem;
+	}
+}

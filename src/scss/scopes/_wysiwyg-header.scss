@@ -1,0 +1,20 @@
+// =============================================================================
+// :: WYSIWYG - default
+// =============================================================================
+.s-wysiwyg-header {
+
+	p {
+		/* same styling as c-header__intro */
+		max-width: 50rem;
+		margin-top: 1.6rem;
+
+		font-size: $font-size-base;
+		line-height: $line-height-default;
+		font-weight: $font-weight-light;
+		font-style: italic;
+
+		@include respond-at(get-breakpoint("viewport-4")) {
+			font-size: $font-size-1x-large;
+		}
+	}
+}

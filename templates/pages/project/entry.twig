@@ -1,0 +1,58 @@
+{# ========================================================================== #}
+{# Inheritance #}
+{# ========================================================================== #}
+{% extends "_base/layout" %}
+
+{# ========================================================================== #}
+{# Variables #}
+{# ========================================================================== #}
+{% set transform = {
+		mode: 'fit',
+		width: 800,
+		height: 800,
+		quality: 100,
+		position: 'center-center'
+	}
+%}
+
+{% set activePage = "portfolio" %}
+
+{# ========================================================================== #}
+{# Content #}
+{# ========================================================================== #}
+{% block content %}
+
+	{% cache globally using key 'channel-project' if not craft.app.config.general.devMode  %}
+
+		<section class="l-container js-appear u-margin-bottom-auto">
+			<header class="c-header s-wysiwyg-header">
+				<a class="c-header__back-link c-link c-link--back" href="/portfolio">
+					<span class="c-link__icon">
+						{% include "_svg/arrow-left.svg" %}
+					</span>
+
+					Portfolio overzicht
+				</a>
+
+				<h2 class="c-header__title">{{ entry.commonTitle }}</h2>
+
+				{{ entry.commonDescription }}
+			</header>
+
+			<div class="c-gallery js-gallery">
+				{% for image in entry.portfolioAsset.all()|reverse %}
+					{% if image %}
+						<div class="c-gallery__item" data-glightbox="reportage">
+							<img
+								class="c-gallery__image js-gallery__item"
+								src="{{ image.getUrl(transform) }}"
+								alt="{{ image.title }}"
+								title="{{ image.title }}" />
+						</div>
+					{% endif %}
+				{% endfor %}
+			</div>
+		</section>
+	{% endcache %}
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{# ========================================================================== #}
+{# :: Variables #}
+{# ========================================================================== #}
+{% set blockTitle = item.mxBlockTitle ?? NULL %}
+{% set blockDescription = item.mxBlockDescription ?? NULL %}
+{% set textContent = item.mxTextContent ?? NULL %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+<section class="l-section l-container">
+	<div class="l-section__header">
+		<h2>
+			{{ blockTitle }}
+		</h2>
+
+		<p>
+			{{ blockDescription }}
+		</p>
+	</div>
+
+	<div class="l-section__content">
+		{{ textContent }}
+	</div>
+</section>

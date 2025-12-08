@@ -1,0 +1,18 @@
+columnSuffix: null
+contentColumnType: string
+handle: commonBody
+instructions: 'This component has all the blocks to define a body content'
+name: Body
+searchable: true
+settings:
+  entryTypes:
+    -
+      uid: fb5b6517-5fea-4a50-8eb4-e8e01cd9903f
+  maxEntries: null
+  minEntries: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

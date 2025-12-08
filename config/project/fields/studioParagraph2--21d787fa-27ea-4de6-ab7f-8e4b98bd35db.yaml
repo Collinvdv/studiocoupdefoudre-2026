@@ -1,0 +1,18 @@
+columnSuffix: null
+contentColumnType: text
+handle: studioParagraph2
+instructions: null
+name: 'Studio paragraph 2'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: text
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

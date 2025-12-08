@@ -1,0 +1,34 @@
+// =============================================================================
+// :: Footer
+// =============================================================================
+.c-footer {
+	margin-top: 4rem;
+	padding: 1.6rem 0;
+
+	background-color: black;
+	color: $white;
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-footer__content {
+	display: flex;
+	justify-content: space-between;
+
+	@include respond-to(get-breakpoint("viewport-7")) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.c-footer__text {
+	color: $white;
+}
+
+.c-footer__socials {
+	@include respond-to(get-breakpoint("viewport-7")) {
+		margin-top: 0.8rem;
+	}
+}

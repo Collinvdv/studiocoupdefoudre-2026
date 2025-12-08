@@ -1,0 +1,36 @@
+columnSuffix: null
+contentColumnType: string
+handle: commonHeaderImage
+instructions: 'The common header image is used to add the most important image to a single or a structure.'
+name: 'Header Image'
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:4e25e487-28cf-4e1e-b66d-fea22aca3536' # Volume Images
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:4e25e487-28cf-4e1e-b66d-fea22aca3536' # Volume Images
+  restrictedLocationSubpath: null
+  selectionLabel: 'Add header image'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

@@ -1,0 +1,29 @@
+// =============================================================================
+// :: Get-breakpoint
+// =============================================================================
+@function get-breakpoint($name) {
+	$breakpoint: map-get($breakpoints, $name);
+	$width: map-get($breakpoint, width);
+
+	@return px($width);
+}
+
+// =============================================================================
+// :: Get-viewport-spacing
+// =============================================================================
+@function get-viewport-spacing($name) {
+	$breakpoint: map-get($breakpoints, $name);
+	$viewport-spacing: map-get($breakpoint, viewport-spacing);
+
+	@return $viewport-spacing;
+}
+
+// =============================================================================
+// :: Get-spacing
+// =============================================================================
+@function get-spacing($name) {
+	$breakpoint: map-get($breakpoints, $name);
+	$spacing: map-get($breakpoint, spacing);
+
+	@return $spacing;
+}

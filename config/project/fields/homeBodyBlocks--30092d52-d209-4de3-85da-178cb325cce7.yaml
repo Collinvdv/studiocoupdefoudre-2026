@@ -1,0 +1,20 @@
+columnSuffix: null
+contentColumnType: string
+handle: homeBodyBlocks
+instructions: null
+name: 'Home Body Blocks'
+searchable: true
+settings:
+  entryTypes:
+    -
+      uid: 9b006880-abf8-48ed-9ea7-30dbf5209ac6
+    -
+      uid: 3ae2e51c-b879-4f21-a747-814295464955
+  maxEntries: 2
+  minEntries: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

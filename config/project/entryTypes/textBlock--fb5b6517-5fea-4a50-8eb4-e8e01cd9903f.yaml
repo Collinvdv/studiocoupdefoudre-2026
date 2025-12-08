@@ -1,0 +1,74 @@
+color: null
+description: null
+fieldLayouts:
+  b7ab8542-2237-4692-8c4e-ec6cabd82494:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: b9df10f2-906f-43d9-9e4e-e007f0e8ad6c
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Block title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b004d7be-9459-476e-8133-e24c1e307e87
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 9d779578-007f-456b-9580-e09ce5e9172e
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Block description'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7cb64287-bbb3-47de-9690-384a959d7cc7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5e9a4110-a80c-4b73-b085-7e3debc0655d # Body - Text - Text content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Text content'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f378d6ab-230f-48bc-8f9e-e44587082e82
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d97def6d-52b6-41c1-95cd-8ff1172ff4ca
+        userCondition: null
+handle: textBlock
+hasTitleField: false
+icon: null
+name: Text
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

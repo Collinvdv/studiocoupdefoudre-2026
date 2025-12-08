@@ -1,0 +1,35 @@
+// =============================================================================
+// :: Breakpoints
+// =============================================================================
+$breakpoints: (
+	"viewport-3": (
+		width: 36rem,
+		spacing: 2rem,
+		viewport-spacing: 1.6rem,
+		grid-suffixicate: false
+	),
+	"viewport-4": (
+		width: 48rem,
+		spacing: 2rem,
+		viewport-spacing: 2.4rem,
+		grid-suffixicate: true
+	),
+	"viewport-7": (
+		width: 76.8rem,
+		spacing: 3rem,
+		viewport-spacing: 3.2rem,
+		grid-suffixicate: true
+	),
+	"viewport-9": (
+		width: 99.2rem,
+		spacing: 4rem,
+		viewport-spacing: 4rem,
+		grid-suffixicate: true
+	),
+	"viewport-12": (
+		width: 120rem,
+		spacing: 4rem,
+		viewport-spacing: 4rem,
+		grid-suffixicate: false
+	)
+);

@@ -1,0 +1,24 @@
+{# ========================================================================== #}
+{# :: Variables #}
+{# ========================================================================== #}
+{% set url = url ?? NULL %}
+{% set name = name ?? NULL %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+<li class="c-socials__item">
+	<a
+		href="{{ url }}"
+		target="_blank"
+		class="c-socials__link u-visually-hidden__parent"
+	>
+		<span class="u-visually-hidden">
+			{{ name }}
+		</span>
+
+		<span class="c-socials__icon">
+			{% include "/_svg/" ~ name ~ ".svg" %}
+		</span>
+	</a>
+</li>

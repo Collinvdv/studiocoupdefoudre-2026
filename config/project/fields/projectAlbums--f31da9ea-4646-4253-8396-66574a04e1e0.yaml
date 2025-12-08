@@ -1,0 +1,23 @@
+columnSuffix: null
+contentColumnType: string
+handle: projectAlbums
+instructions: 'Add an album to the portfolio page'
+name: 'Portfolio Albums'
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showSiteMenu: true
+  sources:
+    - 'section:ef6f29f0-9c10-4f94-99e9-24d3aaea6646' # Projects
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

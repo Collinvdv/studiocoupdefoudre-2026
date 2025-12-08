@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: sectionTitle
+instructions: 'Add a title'
+name: 'Home Body Blocks - Home Shoots Block - Title'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 128
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: 'Recente reportages'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

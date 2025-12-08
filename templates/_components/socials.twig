@@ -1,0 +1,37 @@
+{# ========================================================================== #}
+{# :: Variables #}
+{# ========================================================================== #}
+{% set classes = classes ?? "" %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+<ul class="c-socials {{ classes }}">
+	{% if globalFacebook.commonLink is not empty %}
+		{% include "/_components/social.twig" with {
+			url: globalFacebook.commonLink.getUrl(),
+			name: "facebook"
+		} only %}
+	{% endif %}
+
+	{% if globalLinkedin.commonLink is not empty %}
+		{% include "/_components/social.twig" with {
+			url: globalLinkedin.commonLink.getUrl(),
+			name: "linkedin"
+		} only %}
+	{% endif %}
+
+	{% if globalInstagram.commonLink is not empty %}
+		{% include "/_components/social.twig" with {
+			url: globalInstagram.commonLink.getUrl(),
+			name: "instagram"
+		} only %}
+	{% endif %}
+
+	{% if globalTwitter.commonLink is not empty %}
+		{% include "/_components/social.twig" with {
+			url: globalTwitter.commonLink.getUrl(),
+			name: "twitter"
+		} only %}
+	{% endif %}
+</ul>

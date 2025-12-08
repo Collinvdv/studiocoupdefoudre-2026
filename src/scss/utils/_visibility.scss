@@ -1,0 +1,37 @@
+/* stylelint-disable declaration-no-important */
+
+// =============================================================================
+// :: Visibility
+// =============================================================================
+.u-hide {
+	display: none !important;
+}
+
+.u-hide\@above-viewport-7 {
+	@include respond-at(get-breakpoint("viewport-7")) {
+		display: none !important;
+	}
+}
+
+.u-hide\@below-viewport-7 {
+	@include respond-to(get-breakpoint("viewport-7")) {
+		display: none !important;
+	}
+}
+
+.u-visually-hidden__parent {
+	position: relative;
+}
+
+.u-visually-hidden {
+	position: absolute !important;
+
+	width: 0.1rem;
+	height: 0.1rem;
+	overflow: hidden;
+
+	white-space: nowrap; /* added line */
+
+	clip: rect(0.1rem 0.1rem 0.1rem 0.1rem); /* IE6, IE7 */
+	clip: rect(0.1rem, 0.1rem, 0.1rem, 0.1rem);
+}

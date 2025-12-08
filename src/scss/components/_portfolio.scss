@@ -1,0 +1,168 @@
+// =============================================================================
+// :: Portfolio
+// =============================================================================
+.c-portfolio {
+	$spacing: get-spacing("viewport-3");
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: calc(100% + #{$spacing});
+	margin: 4.8rem calc(#{$spacing} * -0.5) calc(#{$spacing} * -0.5);
+	padding: 0;
+
+	@each $breakpoint, $params in $breakpoints {
+		$width: map-get($params, width);
+		$spacing: map-get($params, spacing);
+
+		@include respond-at(px($width)) {
+			width: calc(100% + #{$spacing});
+			margin: 4.8rem calc(#{$spacing * -0.5}) calc(#{$spacing * -0.5});
+		}
+	}
+
+	list-style: none;
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-portfolio__item {
+	$col: 100% * (12 / 12);
+	$spacing: get-spacing("viewport-3");
+
+	position: relative;
+
+	display: flex;
+	width: calc(#{$col} - #{$spacing});
+	height: 48rem;
+	margin: calc(#{$spacing} / 2);
+
+	@include respond-at(get-breakpoint("viewport-4")) {
+		$col: calc(100% * (6 / 12));
+		$spacing: get-spacing("viewport-4");
+
+		width: calc(#{$col} - #{$spacing});
+		margin: calc(#{$spacing} / 2);
+	}
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		$col: calc(100% * (4 / 12));
+		$spacing: get-spacing("viewport-7");
+
+		width: calc(#{$col} - #{$spacing});
+		margin: calc(#{$spacing} / 2);
+	}
+
+	@include respond-at(get-breakpoint("viewport-9")) {
+		$col: calc(100% * (3 / 12));
+		$spacing: get-spacing("viewport-9");
+
+		width: calc(#{$col} - #{$spacing});
+		margin: calc(#{$spacing} / 2);
+	}
+
+	@include respond-at(get-breakpoint("viewport-12")) {
+		height: 54rem;
+	}
+}
+
+.c-portfolio__item-link {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	width: 100%;
+	height: 100%;
+	padding: 1.6rem;
+
+	background-size: cover;
+	background-position: center center;
+
+	transition: filter 0.3s ease-in-out;
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		filter: grayscale(1);
+
+		&:hover {
+			filter: grayscale(0);
+		}
+	}
+}
+
+.c-portfolio__item-title {
+	font-family: $font-family-primary;
+	font-weight: $font-weight-normal;
+	font-size: $font-size-5x-large;
+	line-height: $line-height-normalize;
+
+	color: $white;
+}
+
+.c-portfolio__item-category {
+	font-size: $font-size-1x-large;
+
+	color: $white;
+}
+
+.c-portfolio\:empty {
+	margin-top: 2.4rem;
+
+	color: $grey-middle;
+}
+
+// =============================================================================
+// :: Modifiers
+// =============================================================================
+.c-portfolio--horizontal {
+	$spacing: get-spacing("viewport-3");
+
+	margin-top: calc(#{$spacing} * -0.5);
+
+	@include respond-at(get-breakpoint("viewport-4")) {
+		$spacing: get-spacing("viewport-4");
+
+		margin-top: calc(#{$spacing} * -0.5);
+	}
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		$spacing: get-spacing("viewport-7");
+
+		margin-top: calc(#{$spacing} * -0.5);
+	}
+
+	@include respond-at(get-breakpoint("viewport-9")) {
+		$spacing: get-spacing("viewport-9");
+
+		margin-top: calc(#{$spacing} * -0.5);
+	}
+
+	@include respond-at(get-breakpoint("viewport-12")) {
+		$spacing: get-spacing("viewport-12");
+
+		margin-top: calc(#{$spacing} * -0.5);
+	}
+
+	.c-portfolio__item {
+
+		@include respond-at(get-breakpoint("viewport-4")) {
+			$col: calc(100% * (6 / 12));
+			$spacing: get-spacing("viewport-4");
+
+			width: calc(#{$col} - #{$spacing});
+			margin: calc(#{$spacing} / 2);
+		}
+
+		@include respond-at(get-breakpoint("viewport-9")) {
+			$col: calc(100% * (4 / 12));
+			$spacing: get-spacing("viewport-9");
+
+			width: calc(#{$col} - #{$spacing});
+			margin: calc(#{$spacing} / 2);
+		}
+
+		@include respond-at(get-breakpoint("viewport-12")) {
+			height: 54rem;
+		}
+	}
+}

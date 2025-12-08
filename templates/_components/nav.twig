@@ -1,0 +1,51 @@
+{# ========================================================================== #}
+{# :: Default #}
+{# ========================================================================== #}
+<div class="c-nav js-nav l-container@viewport-7">
+	<div class="c-nav__mobile-bar">
+		<a href="{{ siteUrl }}" class="c-nav__logo-container">
+			<img
+				src="/assets/images/studio-coup-de-foudre_logo.jpg"
+				alt="Studio Coup De Foudre"
+				title="Logo van Studio Coup De Foudre"
+				width="200"
+				height="56"
+				class="c-logo c-nav__logo" />
+		</a>
+
+		<button type="button" class="c-hamburger u-hide@above-viewport-7 js-nav__toggle">
+			Menu
+
+			<span aria-hidden="true" class="c-hamburger__bar"></span>
+			<span aria-hidden="true" class="c-hamburger__bar"></span>
+			<span aria-hidden="true" class="c-hamburger__bar"></span>
+			<span aria-hidden="true" class="c-hamburger__bar"></span>
+		</button>
+	</div>
+
+	<nav class="c-nav__wrapper">
+		<h2 class="u-hide">Navigatie</h2>
+
+		<ul class="c-nav__list">
+			<li class="c-nav__item  {% if activePage == "portfolio" %} is-active{% endif %}">
+				<a href="/portfolio"
+					class="c-nav__link">Portfolio</a>
+			</li>
+
+			<li class="c-nav__item  {% if activePage == "prijzen" %} is-active{% endif %}">
+				<a href="/prijzen"
+					class="c-nav__link">Prijzen</a>
+			</li>
+
+			<li class="c-nav__item {% if activePage == "studio" %} is-active{% endif %}">
+				<a href="/studio"
+					class="c-nav__link">Studio</a>
+			</li>
+
+			<li class="c-nav__item {% if activePage == "contact" %} is-active{% endif %}">
+				<a href="/contact"
+					class="c-nav__link">Contact</a>
+			</li>
+		</ul>
+	</nav>
+</div>

@@ -1,0 +1,18 @@
+columnSuffix: null
+contentColumnType: string
+handle: prices
+instructions: null
+name: prices
+searchable: true
+settings:
+  entryTypes:
+    -
+      uid: f870c87b-30ca-4712-a9c8-b5f3733db928
+  maxEntries: null
+  minEntries: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,108 @@
+color: null
+description: null
+fieldLayouts:
+  33036f91-b72f-4e7d-b593-953e9e124374:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: e3b2fba9-5526-48bf-b232-78b34432c257
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Price title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e7852620-f8c4-4f1b-8dd3-e734539ceb0d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 47976d96-cdc0-4289-ae5a-c365220337f4
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Price duration'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27e9aee6-0319-4f9a-8d0d-aeff301b469a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0a254298-83e7-4b9a-b91c-3e0746533fa0
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Price amount'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 382882a3-4128-413f-adfa-654dcd67fec8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 9cbb348c-e0cd-4298-9df4-ceea2cc8a255
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Price info'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ba0f3e5c-2b05-406e-a5fc-b35e29a25d57
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7481eaaa-37e3-4351-9e2d-8abb5d9bb486
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Price image'
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 24bbbc19-e4d3-441a-b437-86b211a2ea0b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ce33c304-2d81-4649-901c-1467b533441f
+        userCondition: null
+handle: prizeblock
+hasTitleField: false
+icon: null
+name: prizeBlock
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

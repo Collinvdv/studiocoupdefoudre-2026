@@ -1,0 +1,9 @@
+baseUrl: $DEFAULT_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: nl
+name: 'Studio Coup De Foudre'
+primary: true
+siteGroup: bde2a3cf-1aa8-462a-8b97-25e95ae3e8c7 # Studio Coup De Foudre
+sortOrder: 1

@@ -1,0 +1,24 @@
+fieldLayouts:
+  99240b45-1c6e-4c44-9818-59f4ad5d3345:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4ba47aec-1758-4437-bcd2-775fc3066311 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2eed95ec-234b-4816-a4be-e793a247a0f9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Url
+        uid: 62a1e1fe-8206-40c4-afca-1de675bf0f14
+        userCondition: null
+handle: globalFacebook
+name: facebook
+sortOrder: 2

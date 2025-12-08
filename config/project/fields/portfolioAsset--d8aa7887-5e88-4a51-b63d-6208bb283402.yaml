@@ -1,0 +1,37 @@
+columnSuffix: null
+contentColumnType: string
+handle: portfolioAsset
+instructions: 'Add an image to the album'
+name: 'Portfolio Asset'
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:4e25e487-28cf-4e1e-b66d-fea22aca3536' # Volume Images
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:4e25e487-28cf-4e1e-b66d-fea22aca3536' # Volume Images
+  restrictedLocationSubpath: null
+  selectionLabel: 'Select an image'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  sources:
+    - 'volume:4e25e487-28cf-4e1e-b66d-fea22aca3536' # Volume Images
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

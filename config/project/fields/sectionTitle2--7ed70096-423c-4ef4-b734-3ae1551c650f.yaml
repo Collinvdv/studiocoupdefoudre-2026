@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: sectionTitle2
+instructions: 'Add a title to this section'
+name: 'Home Body Blocks - Home Call To Action - Title'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 255
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: 'Wil je ook graag eens voor mijn lens staan?'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

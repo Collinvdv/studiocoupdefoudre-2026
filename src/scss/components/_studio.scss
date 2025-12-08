@@ -1,0 +1,55 @@
+// =============================================================================
+// :: Studio page
+// =============================================================================
+.c-studio {
+	@include respond-to(get-breakpoint("viewport-7")) {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		align-items: center;
+
+		margin: auto;
+	}
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-studio__content {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+
+	p {
+		margin-top: 1.6rem;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+}
+
+.c-studio__title,
+.c-studio__text {
+	@include respond-at(get-breakpoint("viewport-4")) {
+		max-width: 40rem;
+	}
+
+	@include respond-at(get-breakpoint("viewport-7")) {
+		max-width: initial;
+	}
+}
+
+.c-studio__title {
+	margin-bottom: 1.6rem;
+}
+
+.c-studio__image {
+	height: 60vh;
+	overflow: hidden;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}

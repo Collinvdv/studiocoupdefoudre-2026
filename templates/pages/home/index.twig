@@ -1,0 +1,46 @@
+{# ========================================================================== #}
+{# Inheritance #}
+{# ========================================================================== #}
+{% extends "_base/layout" %}
+
+{# ========================================================================== #}
+{# Variables #}
+{# ========================================================================== #}
+{% set activePage = "home" %}
+
+{# ========================================================================== #}
+{# Content #}
+{# ========================================================================== #}
+{% block content %}
+	{% cache globally using key 'single-home' if not craft.app.config.general.devMode  %}
+		<div class="c-home js-appear">
+			{# HERO #}
+			<div class="l-container@viewport-9">
+				<div class="c-home__hero" style="background-image: url({{ entry.commonHeaderImage.one().url() }})">
+					<blockquote class="c-home__hero-quote">
+						{% set quote = entry.homeQuote|nl2br %}
+
+						{{quote|raw}}
+					</blockquote>
+				</div>
+			</div>
+
+			{# MATRIX BLOCKS #}
+			{% for section in entry.homeBodyBlocks.all() %}
+				{% switch section.type %}
+
+				{% case "mxHomeShootsBlock" %}
+					{% include "pages/home/partials/projects.twig" with {
+						data: section
+					} only %}
+
+				{% case "mxHomeCta" %}
+					{% include "pages/home/partials/cta.twig" with {
+						data: section
+					} only %}
+
+				{% endswitch %}
+			{% endfor %}
+		</div>
+	{% endcache %}
+{% endblock %}

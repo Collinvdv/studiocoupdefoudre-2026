@@ -1,0 +1,142 @@
+dateModified: 1764601936
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: 'Entry types'
+      type: heading
+    -
+      key: singles
+      tableAttributes:
+        - link
+      type: native
+    -
+      key: 'section:ef6f29f0-9c10-4f94-99e9-24d3aaea6646' # Projects
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:6095ed10-abc1-4ab5-861c-424b97e69d5e' # Pages
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+email:
+  fromEmail: collin@littlemissrobot.com
+  fromName: boilerplate
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  volumeImages:
+    hasUrls: true
+    name: 'Volume Images'
+    settings:
+      path: $BASE_PATH
+    type: craft\fs\Local
+    url: $BASE_URL_PATH
+meta:
+  __names__:
+    0df14fe0-bee1-457a-8cac-730a4358935f: 'Header Image' # Header Image
+    1b47ee71-5e15-4700-90f5-04dc76db1448: twitter # twitter
+    1cb43f35-be2f-406d-9cb5-9b2fc57edb36: facebook # facebook
+    2e3a0ad8-08a3-4ce9-9bda-96e9b4d9a610: 'Home Body Blocks - Home Call To Action - Link' # Home Body Blocks - Home Call To Action - Link
+    2ebc2daa-e69f-4b13-a4a1-6d9b87d01f6e: 'Home Body Blocks - Home Call To Action - Description' # Home Body Blocks - Home Call To Action - Description
+    4b208ae3-3d27-494e-bb91-a1e90c40e60b: Prijzen # Prijzen
+    4ba47aec-1758-4437-bcd2-775fc3066311: Link # Link
+    4e25e487-28cf-4e1e-b66d-fea22aca3536: 'Volume Images' # Volume Images
+    4f9a5ad9-0f0f-415b-a5bf-2345427435bb: 'Page studio' # Page studio
+    5e9a4110-a80c-4b73-b085-7e3debc0655d: 'Body - Text - Text content' # Body - Text - Text content
+    6d56170c-d50e-4ff0-871e-3fed9d57577c: Simple # Simple
+    6ee4bdf6-4e21-4495-babe-78e825374c89: 'Public Schema' # Public Schema
+    7f396182-7dff-4f06-bbfe-f9d63eff76f1: Contact # Contact
+    9a58a80f-9c56-4570-a88d-9e28b651f603: Contact # Contact
+    9b75ce17-ff83-4745-85bf-94feaea3ba6a: Prijzen # Prijzen
+    9fed64cd-76db-4c1d-8b46-efc14490c4ce: Pages # Pages
+    21d787fa-27ea-4de6-ab7f-8e4b98bd35db: 'Studio paragraph 2' # Studio paragraph 2
+    23e5b070-68ff-4f00-b5da-29e2417cb874: Portfolio # Portfolio
+    71ace60b-1def-4289-b954-835d70c7f96f: Title # Title
+    97fe6551-4a72-467e-9f94-995cf5a71309: 'Home Quote' # Home Quote
+    272e77fc-88eb-4142-aad0-1f3a3d741998: category # category
+    951be517-f918-4494-b1f0-db3ffbd712f1: ContactData # ContactData
+    1701d29b-97e7-44f0-b36d-0c33abb3ac61: 'Page studio' # Page studio
+    5705b456-77ec-47e8-8e23-19798b3e4884: Description # Description
+    6095ed10-abc1-4ab5-861c-424b97e69d5e: Pages # Pages
+    30092d52-d209-4de3-85da-178cb325cce7: 'Home Body Blocks' # Home Body Blocks
+    0659686e-097b-4429-827c-0abdf454b88a: Seo # Seo
+    a1e53f92-6af3-411e-b427-42b37107382b: 'Studio quote' # Studio quote
+    ae884c9b-35bc-4431-9dc2-251ae9126355: 'Home ' # Home 
+    ba9b31ec-83c2-4cac-b044-75c03b304f5b: instagram # instagram
+    bde2a3cf-1aa8-462a-8b97-25e95ae3e8c7: 'Studio Coup De Foudre' # Studio Coup De Foudre
+    c7ef9fc8-b73e-40c5-8e15-e6759d47ef03: 'Home ' # Home 
+    d8aa7887-5e88-4a51-b63d-6208bb283402: 'Portfolio Asset' # Portfolio Asset
+    d327e0d4-c102-4266-9253-894927b5a8ca: Project # Project
+    e1d8c407-dd15-416f-999d-576c5c96be62: 'Home Body Blocks - Home Shoots Block - Description' # Home Body Blocks - Home Shoots Block - Description
+    e47a706d-baae-4765-883f-bc8563ac1d71: 'Studio paragraph' # Studio paragraph
+    e563c9e2-beb0-4bee-8d8f-c5fd8926e90a: 'ContactData - ContactLink - URL' # ContactData - ContactLink - URL
+    e2205919-9acf-471c-9998-3d318bb118f4: Body # Body
+    ef6f29f0-9c10-4f94-99e9-24d3aaea6646: Projects # Projects
+    f7c329e7-b989-4b22-97c9-0e761c4d5d81: linkedIn # linkedIn
+    f31da9ea-4646-4253-8396-66574a04e1e0: 'Portfolio Albums' # Portfolio Albums
+    fc09fd9c-5a1a-4c16-97e8-a208d962d92b: 'Studio Coup De Foudre' # Studio Coup De Foudre
+    fd7aa02b-bd43-4fb2-a7e0-e437bdf27c22: prices # prices
+    fde1d573-5ad7-4641-ac13-84f8f4f115ff: Portfolio # Portfolio
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+    settings:
+      description: 'Studio Coup De Foudre is de fotografie-studio van freelance fotografe Jente Van Pelt, die jouw huwelijk, zwangerschap of ander mooi moment vastlegt.'
+      facebookAppId: ''
+      metaTemplate: ''
+      robots:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n{% endif %}"
+      sitemapLimit: '1000'
+      sitemapName: sitemap
+      socialImage: ''
+      title:
+        -
+          key: '1'
+          locked: '0'
+          template: '{title}'
+        -
+          key: wku
+          locked: '0'
+          template: '- Studio Coup De Foudre'
+      titleSuffix: null
+      twitterHandle: ''
+system:
+  edition: solo
+  live: true
+  name: 'coup de foudre'
+  schemaVersion: 5.8.0.3
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true

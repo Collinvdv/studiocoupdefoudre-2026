@@ -1,0 +1,20 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: ae884c9b-35bc-4431-9dc2-251ae9126355 # Home 
+handle: pageHome
+maxAuthors: 1
+name: 'Home '
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  fc09fd9c-5a1a-4c16-97e8-a208d962d92b: # Studio Coup De Foudre
+    enabledByDefault: true
+    hasUrls: true
+    template: /pages/home/index.twig
+    uriFormat: __home__
+type: single

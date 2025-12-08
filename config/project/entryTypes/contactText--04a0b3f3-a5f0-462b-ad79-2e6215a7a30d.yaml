@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  e7bdb129-5f4a-45f7-b2ca-b3418b295252:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: f650e94f-10d0-4613-b5da-2d6faa1886e6
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cd1488ce-ae97-4e58-b86b-5a19d3b15f0a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a13fef07-72b3-4c42-a616-4d613a7e5dfe
+        userCondition: null
+handle: contactText
+hasTitleField: false
+icon: null
+name: ContactText
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

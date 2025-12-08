@@ -1,0 +1,74 @@
+color: null
+description: null
+fieldLayouts:
+  7f97fd6b-9f0a-4824-8c4e-e6793a00d925:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7ed70096-423c-4ef4-b734-3ae1551c650f
+            handle: sectionTitle
+            includeInCards: true
+            instructions: null
+            label: Title
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a4c908d8-5e9a-4bef-84c7-a863c740380c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2ebc2daa-e69f-4b13-a4a1-6d9b87d01f6e # Home Body Blocks - Home Call To Action - Description
+            handle: sectionDescription
+            includeInCards: false
+            instructions: null
+            label: Description
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a02791a3-4291-4be2-9b6a-c5b8741b75e1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2e3a0ad8-08a3-4ce9-9bda-96e9b4d9a610 # Home Body Blocks - Home Call To Action - Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Link
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ffdd1115-77af-4e65-9ad6-a860e06b5a24
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f98fc9f3-a279-44d8-9a96-05d789b39418
+        userCondition: null
+handle: mxHomeCta
+hasTitleField: false
+icon: null
+name: 'Home Call To Action'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

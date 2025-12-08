@@ -1,0 +1,24 @@
+// =============================================================================
+// :: Glightbox styling overrides
+// =============================================================================
+.gslide-title {
+	font-family: $font-family-secondary !important; /*stylelint-disable-line*/
+	font-size: $font-size-base !important; /*stylelint-disable-line*/
+	font-style: italic !important; /*stylelint-disable-line*/
+}
+
+@include respond-at(get-breakpoint("viewport-7")) {
+
+	.gdesc-inner {
+		padding: 1.6rem 0 !important; /*stylelint-disable-line*/
+	}
+
+	.gslide-description {
+		background-color: transparent !important; /*stylelint-disable-line*/
+	}
+
+	.gslide-title {
+		color: $grey-light !important; /*stylelint-disable-line*/
+		margin-bottom: 0 !important; /*stylelint-disable-line*/
+	}
+}
