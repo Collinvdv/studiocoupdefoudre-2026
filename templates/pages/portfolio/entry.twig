@@ -45,7 +45,7 @@
 							<a
 								class="c-portfolio__item-link"
 								href="{{ album.getUrl() }}"
-								style="background-image: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.5)), url({{ album.commonHeaderImage.one().url }});"
+								style="background-image: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.5)), url({{ album.commonHeaderImage.one().getUrl(transform) }});"
 							>
 								{% if album.commonCategory %}
 									<span class="c-portfolio__item-category" aria-label="Categorie">
