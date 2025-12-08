@@ -22,7 +22,7 @@
 {# ========================================================================== #}
 {% block content %}
 
-	{% cache globally using key 'channel-project' if not craft.app.config.general.devMode  %}
+	{% cache globally using key 'channel-project' ~ entry.slug if not craft.app.config.general.devMode  %}
 
 		<section class="l-container js-appear u-margin-bottom-auto">
 			<header class="c-header s-wysiwyg-header">
