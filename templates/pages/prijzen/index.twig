@@ -7,6 +7,15 @@
 {# :: Variables #}
 {# ========================================================================== #}
 {% set activePage = "prijzen" %}
+{% set transform = {
+		mode: 'fit',
+		width: 800,
+		height: 800,
+		quality: 100,
+		position: 'center-center'
+	}
+%}
+
 
 {# ========================================================================== #}
 {# Content #}
@@ -35,10 +44,10 @@
 						{% if item.priceImage.one() %}
 							<div
 								class="c-prijs__image"
-								style="background-image: url({{item.priceImage.one().url}})">
+								style="background-image: url({{item.priceImage.one().getUrl(transform)}})">
 								<img
 									class="u-hide"
-									src="{{item.priceImage.one().url}}"
+									src="{{item.priceImage.one().getUrl(transform)}}"
 								/>
 							</div>
 						{% endif %}
