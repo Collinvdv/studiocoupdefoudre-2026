@@ -17,13 +17,21 @@
 			{# HERO #}
 			<div class="l-container@viewport-9">
 				<div class="c-home__hero" style="background-image: url({{ entry.commonHeaderImage.one().url() ?? '' }})">
-					<blockquote class="c-home__hero-quote">
-						{% set quote = entry.homeQuote|nl2br %}
-
-						{{quote|raw}}
-					</blockquote>
 				</div>
 			</div>
+
+			{% if entry.homeQuote ?? null %}
+				<div class="c-marquee">
+					<blockquote class="c-marquee__track">
+						{{entry.homeQuote|nl2br|replace("<br />", " •")}}
+						<span> •</span>
+						{{entry.homeQuote|nl2br|replace("<br />", " •")}}
+						<span> •</span>
+						{{entry.homeQuote|nl2br|replace("<br />", " •")}}
+						<span> •</span>
+					</blockquote>
+				</div>
+			{% endif %}
 
 			{# MATRIX BLOCKS #}
 			{% for section in entry.homeBodyBlocks.all() %}

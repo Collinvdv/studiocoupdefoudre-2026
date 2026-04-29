@@ -1,0 +1,61 @@
+.c-marquee {
+  --marquee-pseudo-width: 5rem;
+
+  position: relative;
+  display: inline-block;
+  width: auto;
+
+  overflow: clip;
+  white-space: nowrap;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: var(--marquee-pseudo-width);
+    height: 100%;
+    background-image: linear-gradient(to right, $sand, transparent);
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &::after {
+    left: calc(100vw - var(--marquee-pseudo-width));
+    background-image: linear-gradient(to left, $sand, transparent);
+  }
+
+  @include respond-at(get-breakpoint("viewport-7")) {
+    &::before,
+    &::after {
+      --marquee-pseudo-width: 10rem;
+    }
+  }
+}
+
+.c-marquee__track {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33%);
+  }
+}
+
+.c-marquee__track {
+  margin: 2rem 0 0;
+
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2;
+
+  width: 100%;
+
+  color: $bubblegum;
+}
