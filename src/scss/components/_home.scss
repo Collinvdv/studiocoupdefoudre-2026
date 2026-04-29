@@ -58,8 +58,15 @@
 }
 
 .c-home__projects {
-  @include respond-at(get-breakpoint("viewport-9")) {
+  @media screen and (min-width: 80rem) {
+    gap: 2.4rem;
     display: flex;
+  }
+}
+
+.c-home__projects-header {
+  @media screen and (min-width: 80rem) {
+    flex: 1 0 25%;
   }
 }
 
@@ -70,11 +77,11 @@
 
 .c-home__projects-portfolio {
   padding: 0;
-}
 
-.c-home__projects-header {
-  @include respond-at(get-breakpoint("viewport-9")) {
-    margin-right: get-viewport-spacing("viewport-9");
+  margin-top: 2rem;
+
+  @media screen and (min-width: 80rem) {
+    margin-top: 0;
   }
 }
 

@@ -47,4 +47,9 @@ body {
     height: 100vh;
     overflow: hidden;
   }
+
+  ::selection {
+    background-color: $ultramarine-700;
+    color: $white;
+  }
 }
