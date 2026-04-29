@@ -58,14 +58,16 @@
 }
 
 .c-home__projects {
-  @media screen and (min-width: 80rem) {
+  @include respond-at(get-breakpoint("viewport-9")) {
     gap: 2.4rem;
     display: flex;
+    justify-content: start;
+    align-items: start;
   }
 }
 
 .c-home__projects-header {
-  @media screen and (min-width: 80rem) {
+  @include respond-at(get-breakpoint("viewport-9")) {
     flex: 1 0 25%;
   }
 }
@@ -76,13 +78,9 @@
 }
 
 .c-home__projects-portfolio {
+  margin: 0 auto;
+  max-width: 88rem;
   padding: 0;
-
-  margin-top: 2rem;
-
-  @media screen and (min-width: 80rem) {
-    margin-top: 0;
-  }
 }
 
 .c-home__cta {

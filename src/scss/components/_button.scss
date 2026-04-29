@@ -28,3 +28,11 @@
   font-family: $font-family-primary;
   transition: transform 0.3s ease-in-out;
 }
+
+// =============================================================================
+// :: Modifiers
+// =============================================================================
+.c-button--inverse {
+  color: $white;
+  background-color: $ultramarine-700;
+}

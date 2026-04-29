@@ -2,83 +2,81 @@
 // :: Gallery
 // =============================================================================
 .c-gallery {
-	margin-top: 4rem;
+  margin-top: 4rem;
 
-	@include respond-at(get-breakpoint("viewport-4")) {
-		display: flex;
-		flex-wrap: wrap;
-		width: calc(100% + (2 * 0.8rem));
-		margin-top: 5.6rem;
-		margin-left: -0.8rem;
-	}
+  @include respond-at(get-breakpoint("viewport-4")) {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + (2 * 0.8rem));
+    margin-top: 5.6rem;
+    margin-left: -0.8rem;
+  }
 }
 
 // =============================================================================
 // :: Elements
 // =============================================================================
 .c-gallery__item {
-	@include respond-at(get-breakpoint("viewport-4")) {
-		width: calc((100% / 2) - 1.6rem);
-		height: 20rem;
-		overflow: hidden;
-		margin: 0.8rem;
+  @include respond-at(get-breakpoint("viewport-4")) {
+    width: calc((100% / 2) - 1.6rem);
+    height: 30rem;
+    overflow: hidden;
+    margin: 0.8rem;
 
-		cursor: zoom-in;
-	}
+    cursor: zoom-in;
+  }
 
-	@include respond-at(get-breakpoint("viewport-7")) {
-		position: relative;
+  @include respond-at(get-breakpoint("viewport-7")) {
+    position: relative;
 
-		width: calc((100% / 4) - 1.6rem);
-		height: 16rem;
-		overflow: hidden;
+    width: calc((100% / 4) - 1.6rem);
+    overflow: hidden;
 
-		&:hover {
+    &:hover {
+      .c-gallery__image {
+        transform: translate3d(-50%, -50%, 0) scale(1.1);
+      }
+    }
+  }
 
-			.c-gallery__image {
-				transform: translate3d(-50%, -50%, 0) scale(1.1);
-			}
-		}
-	}
+  @include respond-at(get-breakpoint("viewport-9")) {
+    width: calc((100% / 5) - 1.6rem);
+  }
 
-	@include respond-at(get-breakpoint("viewport-9")) {
-		width: calc((100% / 5) - 1.6rem);
-	}
-
-	@include respond-at(get-breakpoint("viewport-12")) {
-		height: 20rem;
-	}
+  @include respond-at(get-breakpoint("viewport-12")) {
+    height: 40rem;
+  }
 }
 
 .c-gallery__image {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 
-	@include respond-at(get-breakpoint("viewport-4")) {
-		position: relative;
-		top: 50%;
-		left: 50%;
+  @include respond-at(get-breakpoint("viewport-4")) {
+    position: relative;
+    top: 50%;
+    left: 50%;
 
-		display: block;
-		min-width: 140%;
-		height: auto;
+    display: block;
+    min-width: 140%;
+    height: auto;
 
-		transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 
-		@supports (object-fit: cover) {
-			width: 100%;
-			min-width: auto;
-			height: 100%;
+    @supports (object-fit: cover) {
+      width: 100%;
+      min-width: auto;
+      height: 100%;
 
-			object-fit: cover;
-		}
-	}
+      object-fit: cover;
+    }
+  }
 
-	@include respond-at(get-breakpoint("viewport-7")) {
-		transform: translate3d(-50%, -50%, 0) scale(1);
+  @include respond-at(get-breakpoint("viewport-7")) {
+    transform: translate3d(-50%, -50%, 0) scale(1);
 
-		transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
 
-		transition: transform 0.5s ease-in-out;
-	}
+    transition: transform 0.5s ease-in-out;
+  }
 }

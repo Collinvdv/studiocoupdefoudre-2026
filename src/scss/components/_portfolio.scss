@@ -5,12 +5,15 @@
   --portfolio-spacing: 2.4rem;
 
   list-style: none;
+  padding: 0;
 
   display: grid;
   gap: var(--portfolio-spacing);
 
   @include respond-at(get-breakpoint("viewport-4")) {
     grid-template-columns: repeat(2, 1fr);
+    justify-content: start;
+    align-items: start;
   }
 
   @media screen and (min-width: 56rem) {
@@ -104,4 +107,13 @@
   margin-top: 2.4rem;
 
   color: $ultramarine-100;
+}
+
+// =============================================================================
+// :: Modifiers
+// =============================================================================
+.c-portfolio--large {
+  @include respond-at(get-breakpoint("viewport-12")) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
