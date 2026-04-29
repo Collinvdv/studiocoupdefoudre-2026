@@ -29,7 +29,11 @@
 					{% case "contactLink" %}
 						<a
 							class="l-centered__item c-link"
-							href="{{item.contactURL}}">{{item.contactURL.label}}</a>
+							href="{{item.contactURL}}">
+							<strong>
+								{{item.contactURL.label}}
+							</strong>
+						</a>
 
 					{% case "contactText" %}
 						<p class="l-centered__item">
