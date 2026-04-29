@@ -16,7 +16,7 @@
 		<div class="c-home js-appear">
 			{# HERO #}
 			<div class="l-container@viewport-9">
-				<div class="c-home__hero" style="background-image: url({{ entry.commonHeaderImage.one().url() }})">
+				<div class="c-home__hero" style="background-image: url({{ entry.commonHeaderImage.one().url() ?? '' }})">
 					<blockquote class="c-home__hero-quote">
 						{% set quote = entry.homeQuote|nl2br %}
 
