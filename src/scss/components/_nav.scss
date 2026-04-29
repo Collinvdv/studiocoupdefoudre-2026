@@ -52,12 +52,16 @@ $nav-height-mobile: 6.8rem;
 }
 
 .c-nav__logo {
-  width: 10rem;
+  width: 8rem;
   height: 100%;
 
   color: $ultramarine-700;
 
   transition: color 0.2s ease-in-out;
+
+  @include respond-at(get-breakpoint("viewport-4")) {
+    width: 10rem;
+  }
 
   @include respond-at(get-breakpoint("viewport-7")) {
     width: 14rem;

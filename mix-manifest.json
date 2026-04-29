@@ -1,6 +1,13 @@
 {
     "/web/assets/js/main.js": "/web/assets/js/main.js",
     "/web/assets/css/main.css": "/web/assets/css/main.css",
+    "/web/assets/images/favicon/apple-touch-icon.png": "/web/assets/images/favicon/apple-touch-icon.png",
+    "/web/assets/images/favicon/favicon-96x96.png": "/web/assets/images/favicon/favicon-96x96.png",
+    "/web/assets/images/favicon/favicon.ico": "/web/assets/images/favicon/favicon.ico",
+    "/web/assets/images/favicon/favicon.svg": "/web/assets/images/favicon/favicon.svg",
+    "/web/assets/images/favicon/site.webmanifest": "/web/assets/images/favicon/site.webmanifest",
+    "/web/assets/images/favicon/web-app-manifest-192x192.png": "/web/assets/images/favicon/web-app-manifest-192x192.png",
+    "/web/assets/images/favicon/web-app-manifest-512x512.png": "/web/assets/images/favicon/web-app-manifest-512x512.png",
     "/web/assets/images/favicons/android-chrome-192x192.png": "/web/assets/images/favicons/android-chrome-192x192.png",
     "/web/assets/images/favicons/android-chrome-512x512.png": "/web/assets/images/favicons/android-chrome-512x512.png",
     "/web/assets/images/favicons/apple-touch-icon.png": "/web/assets/images/favicons/apple-touch-icon.png",

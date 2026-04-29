@@ -4,6 +4,7 @@
   position: relative;
   display: inline-block;
   width: auto;
+  margin-top: 4rem;
 
   overflow: clip;
   white-space: nowrap;
@@ -58,4 +59,8 @@
   width: 100%;
 
   color: $bubblegum;
+
+  @include respond-at(get-breakpoint("viewport-9")) {
+    font-size: 2.4rem;
+  }
 }

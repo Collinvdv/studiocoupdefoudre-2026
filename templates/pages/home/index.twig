@@ -16,10 +16,18 @@
 	{% cache globally using key 'single-home' if not craft.app.config.general.devMode  %}
 		<div class="c-home js-appear">
 			{# HERO #}
-			<div class="l-container@viewport-9">
+			{# <div class="l-container@viewport-9">
 				<div class="c-home__hero" style="background-image: url({{ entry.commonHeaderImage.one().url() ?? '' }})">
 				</div>
-			</div>
+			</div> #}
+
+			{% for section in entry.homeBodyBlocks.all() %}
+				{% if section.type == "mxHomeShootsBlock" %}
+					{% include "pages/home/partials/projects.twig" with {
+						data: section
+					} only %}
+				{% endif %}
+			{% endfor %}
 
 			{% if entry.homeQuote ?? null %}
 				<div class="c-marquee">
@@ -34,21 +42,12 @@
 				</div>
 			{% endif %}
 
-			{# MATRIX BLOCKS #}
 			{% for section in entry.homeBodyBlocks.all() %}
-				{% switch section.type %}
-
-				{% case "mxHomeShootsBlock" %}
-					{% include "pages/home/partials/projects.twig" with {
-						data: section
-					} only %}
-
-				{% case "mxHomeCta" %}
+				{% if section.type == "mxHomeCta" %}
 					{% include "pages/home/partials/cta.twig" with {
 						data: section
 					} only %}
-
-				{% endswitch %}
+				{% endif %}
 			{% endfor %}
 		</div>
 	{% endcache %}
