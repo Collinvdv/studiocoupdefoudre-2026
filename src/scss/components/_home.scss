@@ -68,7 +68,7 @@
 }
 
 .c-home__projects-description,
-.c-home__projects-link {
+.c-home__projects-actions {
   margin-top: 1.6rem;
 }
 
@@ -87,7 +87,8 @@
 
   text-align: center;
 
-  background-color: $grey-extra-light;
+  background-color: $bubblegum;
+  border-radius: 3rem;
 
   @include respond-at(get-breakpoint("viewport-7")) {
     padding: 8rem;
@@ -100,7 +101,7 @@
 }
 
 .c-home__cta-title {
-  font-size: $font-size-4x-large;
+  @include extend-h1-base;
 
   @include respond-at(get-breakpoint("viewport-7")) {
     font-size: $font-size-5x-large;
@@ -111,6 +112,6 @@
   margin-top: 1.6rem;
 }
 
-.c-home__cta-link {
+.c-home__cta-actions {
   margin-top: 1.6rem;
 }

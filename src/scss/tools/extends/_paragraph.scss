@@ -3,13 +3,14 @@
 // =============================================================================
 @mixin extend-paragraph-base() {
   font-family: $font-family-secondary;
-  font-size: $font-size-1x-small;
-  line-height: $line-height-default;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.2;
 
-  color: $black;
+  color: $ultramarine-700;
 
   @include respond-at(get-breakpoint("viewport-7")) {
-    font-size: $font-size-base;
+    font-size: 1.8rem;
   }
 }
 
@@ -18,9 +19,9 @@
 // =============================================================================
 @mixin extend-small-base() {
   font-family: $font-family-secondary;
-  font-weight: $font-weight-normal;
-  font-size: $font-size-2x-small;
-  line-height: $line-height-default;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.2;
 
-  color: $black;
+  color: $ultramarine-700;
 }
