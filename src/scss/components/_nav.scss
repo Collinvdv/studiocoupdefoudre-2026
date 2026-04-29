@@ -21,7 +21,7 @@ $nav-height-mobile: 6.8rem;
     align-items: center;
     overflow: visible;
 
-    background-color: $white;
+    background-color: $sand;
   }
 
   @include respond-at(get-breakpoint("viewport-9")) {
@@ -39,7 +39,7 @@ $nav-height-mobile: 6.8rem;
   height: $nav-height-mobile;
   padding: $nav-padding-mobile $nav-padding-base;
 
-  background-color: $white;
+  background-color: $sand;
 
   @include respond-at(get-breakpoint("viewport-7")) {
     height: auto;
@@ -98,7 +98,7 @@ $nav-height-mobile: 6.8rem;
     align-items: center;
     justify-content: center;
 
-    background-color: $white;
+    background-color: $sand;
 
     transition: transform 0.3s ease-in-out;
   }
@@ -122,11 +122,12 @@ $nav-height-mobile: 6.8rem;
   display: flex;
   padding: $nav-padding-mobile;
 
-  font-family: $font-family-primary;
-  font-size: $font-size-4x-large;
-  letter-spacing: 0.2rem;
-
-  color: $black;
+  font-family: $font-family-secondary;
+  color: $ultramarine-700;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
 
   cursor: pointer;
 
@@ -136,7 +137,7 @@ $nav-height-mobile: 6.8rem;
 
     padding: $nav-padding-mobile 2.4rem;
 
-    font-size: calc(#{$font-size-3x-large} * 0.9);
+    font-size: 1.6rem;
 
     transition: color 0.3s ease-in-out;
   }
