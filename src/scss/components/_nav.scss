@@ -131,6 +131,7 @@
     .c-nav__link {
       text-decoration: underline wavy 0.3rem currentColor;
       text-underline-offset: 0.4rem;
+      text-decoration-thickness: 0.1rem;
 
       @include respond-at(get-breakpoint("viewport-7")) {
         text-underline-offset: 0.2rem;

@@ -21,20 +21,9 @@
 {# Content #}
 {# ========================================================================== #}
 {% block content %}
-
 	{% cache globally using key 'single-porfolio' ~ entry.slug if not craft.app.config.general.devMode  %}
-		<section class="l-container js-appear" data-slug="{{entry.slug}}">
-			<header class="c-header s-wysiwyg-header">
-				<h1 class="c-header__title">{{ entry.commonTitle }}</h1>
-
-				{{ entry.commonDescription }}
-
-				<div class="c-header__actions">
-					<a class="c-button" href="{{ entry.commonLink }}">
-						{{entry.commonLink.label}}
-					</a>
-				</div>
-			</header>
+		<div class="l-container" data-slug="{{entry.slug}}">
+			<h1 class="c-header__title u-visually-hidden">Portfolio</h1>
 
 			{% if entry.projectAlbums and entry.projectAlbums|length > 0 %}
 				<ul class="c-portfolio c-portfolio--large">
@@ -73,7 +62,10 @@
 					Ik ben momenteel alles mooi in albums aan het gieten! Kom later eens terug om ze in te kijken!
 				</p>
 			{% endif %}
-		</section>
-	{% endcache %}
+		</div>
 
+		{% include "pages/portfolio/partials/cta.twig" with {
+			entry
+		} only %}
+	{% endcache %}
 {% endblock %}

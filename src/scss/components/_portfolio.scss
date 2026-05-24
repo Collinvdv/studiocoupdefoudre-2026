@@ -113,6 +113,16 @@
 // :: Modifiers
 // =============================================================================
 .c-portfolio--large {
+  margin-block: 2rem;
+
+  @include respond-at(get-breakpoint("viewport-7")) {
+    margin-block: 4rem;
+  }
+
+  @include respond-at(get-breakpoint("viewport-9")) {
+    margin-top: 6rem;
+  }
+
   @include respond-at(get-breakpoint("viewport-12")) {
     grid-template-columns: repeat(4, 1fr);
   }
