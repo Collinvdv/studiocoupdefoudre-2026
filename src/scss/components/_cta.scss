@@ -2,17 +2,42 @@
 // :: CTA
 // =============================================================================
 .c-cta {
+  position: relative;
   margin-top: 2rem;
   padding: 8rem 1.6rem 0;
 
-  @include respond-at(get-breakpoint("viewport-7")) {
-    margin-block: 4rem;
+  @include respond-at(get-breakpoint("viewport-4")) {
+    padding-top: 10rem;
   }
 
   @include respond-at(get-breakpoint("viewport-7")) {
+    margin-block: 4rem;
+    padding-top: 14rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 2.4rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Little hack to include footer */
+    height: calc(100% + 20rem);
+
+    background-image: url("../images/footer-pink_shape-2.svg");
+    background-repeat: no-repeat;
+    background-size: 160%;
+    background-position: top center;
+    z-index: -1;
+
+    @include respond-at(get-breakpoint("viewport-12")) {
+      background-image: url("../images/pink-blob.svg");
+      background-size: 140% 100%;
+      background-position: top -5rem right 30%;
+    }
   }
 }
 
@@ -21,11 +46,7 @@
 // =============================================================================
 .c-cta__wrapper {
   @include respond-at(get-breakpoint("viewport-7")) {
-    grid-column: 2 / 11;
-  }
-
-  @include respond-at(get-breakpoint("viewport-9")) {
-    grid-column: 4 / 12;
+    grid-column: 2 / 10;
   }
 
   @include respond-at(get-breakpoint("viewport-12")) {

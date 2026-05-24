@@ -17,18 +17,6 @@
 // =============================================================================
 // :: Elements
 // =============================================================================
-.c-spotlight__title {
-  /* Visually hide */
-  border: 0;
-  clip-path: inset(50%);
-  height: 1px;
-  margin: 0;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .c-spotlight__portfolio {
   margin: 0 auto;
   max-width: 88rem;

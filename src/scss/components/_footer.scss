@@ -12,18 +12,19 @@
 .c-footer__content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-top: solid $ultramarine-700 0.1rem;
   padding-top: 1rem;
+}
 
+.c-footer__text {
   @include respond-to(get-breakpoint("viewport-7")) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.4rem;
   }
 }
 
-.c-footer__socials {
+.c-footer__date {
   @include respond-to(get-breakpoint("viewport-7")) {
-    margin-top: 0.8rem;
+    display: none;
   }
 }
