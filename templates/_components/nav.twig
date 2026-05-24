@@ -1,8 +1,10 @@
 {# ========================================================================== #}
 {# :: Default #}
 {# ========================================================================== #}
-<div class="c-nav js-nav l-container@viewport-7">
-	<div class="c-nav__mobile-bar">
+<div class="c-nav">
+	<nav class="c-nav__wrapper l-container">
+		<h2 class="u-hide">Hoofdnavigatie</h2>
+
 		<a href="{{ siteUrl }}" class="c-nav__logo-container" aria-label="Home">
 			<svg fill="currentcolor" class="c-logo c-nav__logo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="140 100 540 400">
 				<path d="M198.59,186.43c-20.23-4.38-30.73-8.89-29.97-21.34.6-9.92,8.63-16.09,38.06-13.57,29.81,2.55,40.19,7.97,39.72,15.67-.33,5.5-1.9,12.92-7.06,12.52-8.14-.62-18.96-10.38-28.37-11.3-3.87-.38-6,.56-6.13,2.67-.15,2.43,3.01,3.85,9.04,4.9,20.13,3.87,37.24,10.88,36.25,27.1-1.01,16.66-17.99,22.49-49.46,17.29-29.15-4.82-38.09-13.59-37.47-23.87.46-7.66,5.69-12.49,13.91-11.15,9.89,1.62,14.35,7.19,23.74,8.48,2.96.41,5.34-.35,5.48-2.68.14-2.33-2.11-3.66-7.75-4.72Z"/>
@@ -25,38 +27,29 @@
 			</svg>
 		</a>
 
-		<button type="button" class="c-hamburger u-hide@above-viewport-7 js-nav__toggle">
-			Menu
-
-			<span aria-hidden="true" class="c-hamburger__bar"></span>
-			<span aria-hidden="true" class="c-hamburger__bar"></span>
-			<span aria-hidden="true" class="c-hamburger__bar"></span>
-			<span aria-hidden="true" class="c-hamburger__bar"></span>
-		</button>
-	</div>
-
-	<nav class="c-nav__wrapper">
-		<h2 class="u-hide">Navigatie</h2>
-
 		<ul class="c-nav__list">
 			<li class="c-nav__item  {% if activePage == "portfolio" %} is-active{% endif %}">
-				<a href="/portfolio"
-					class="c-nav__link">Portfolio</a>
+				<a href="/portfolio" class="c-nav__link">
+					Portfolio
+				</a>
 			</li>
 
 			<li class="c-nav__item  {% if activePage == "prijzen" %} is-active{% endif %}">
-				<a href="/prijzen"
-					class="c-nav__link">Prijzen</a>
+				<a href="/prijzen" class="c-nav__link">
+					Prijzen
+				</a>
 			</li>
 
 			<li class="c-nav__item {% if activePage == "studio" %} is-active{% endif %}">
-				<a href="/studio"
-					class="c-nav__link">Studio</a>
+				<a href="/studio" class="c-nav__link">
+					Studio
+				</a>
 			</li>
 
 			<li class="c-nav__item {% if activePage == "contact" %} is-active{% endif %}">
-				<a href="/contact"
-					class="c-nav__link">Contact</a>
+				<a href="/contact" class="c-nav__link">
+					Contact
+				</a>
 			</li>
 		</ul>
 	</nav>
