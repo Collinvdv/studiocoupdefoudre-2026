@@ -1,0 +1,53 @@
+color: null
+description: null
+fieldLayouts:
+  b8183ad3-1d9c-460e-90e8-b9896ec516e0:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-05-24T11:12:21+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: 'Gebruik volgend karakter tussen de verschillende begrippen of woorden: •'
+            label: Quote
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: cde3b222-f775-45a0-bbdd-10fb2f70a87d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9fed6e77-e86e-4d08-b766-21816dfde4a6
+        userCondition: null
+handle: mxHomeMarqueeBanner
+hasTitleField: true
+icon: null
+name: 'Home Marquee Banner'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

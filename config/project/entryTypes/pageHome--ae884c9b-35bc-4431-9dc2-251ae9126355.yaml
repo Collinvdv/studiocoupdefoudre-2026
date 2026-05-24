@@ -1,69 +1,43 @@
+color: null
+description: null
 fieldLayouts:
   52abaffc-d949-4029-b089-46fcb5cd5789:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: bf9c1717-ba54-4fc2-aa36-332892f3f3a9
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 0df14fe0-bee1-457a-8cac-730a4358935f # Header Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: fb708f3f-a16f-4f5b-bc38-bda64ad768e2
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 97fe6551-4a72-467e-9f94-995cf5a71309 # Home Quote
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b16181a7-6e39-4b0d-984c-6e247909a84a
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2026-05-24T11:03:23+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 30092d52-d209-4de3-85da-178cb325cce7 # Home Body Blocks
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: ee81e950-8b4a-42d1-a455-259040cf5a6a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-05-24T11:03:23+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 97fe6551-4a72-467e-9f94-995cf5a71309
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b16181a7-6e39-4b0d-984c-6e247909a84a
             userCondition: null
             warning: null
             width: 100
@@ -74,10 +48,15 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2026-05-24T11:03:23+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 0659686e-097b-4429-827c-0abdf454b88a # Seo
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -90,11 +69,12 @@ fieldLayouts:
         userCondition: null
 handle: pageHome
 hasTitleField: false
+icon: null
 name: 'Home '
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

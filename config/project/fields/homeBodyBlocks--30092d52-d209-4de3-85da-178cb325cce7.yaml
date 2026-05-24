@@ -1,19 +1,44 @@
 columnSuffix: null
-contentColumnType: string
 handle: homeBodyBlocks
 instructions: null
 name: 'Home Body Blocks'
 searchable: true
 settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
   entryTypes:
     -
-      uid: 9b006880-abf8-48ed-9ea7-30dbf5209ac6
+      __assoc__:
+        -
+          - uid
+          - 9b006880-abf8-48ed-9ea7-30dbf5209ac6 # Home Shoots Block
+        -
+          - group
+          - General
     -
-      uid: 3ae2e51c-b879-4f21-a747-814295464955
-  maxEntries: 2
+      __assoc__:
+        -
+          - uid
+          - 3ae2e51c-b879-4f21-a747-814295464955 # Home Call To Action
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - eae364ff-53ba-4b06-a702-a0d3459d91de # Home Marquee Banner
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: 3
   minEntries: 1
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
+  showCardsInGrid: false
   viewMode: blocks
 translationKeyFormat: null
 translationMethod: site

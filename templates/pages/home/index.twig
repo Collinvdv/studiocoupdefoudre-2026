@@ -7,48 +7,42 @@
 {# Variables #}
 {# ========================================================================== #}
 {% set activePage = "home" %}
-{% set footerType = "bubblegum" %}
+
+{% set blocks = entry.homeBodyBlocks is defined
+	? entry.homeBodyBlocks.type([
+		'mxHomeShootsBlock',
+		'mxHomeCta',
+		'mxHomeMarqueeBanner'
+	]).all()
+	: []
+%}
 
 {# ========================================================================== #}
 {# Content #}
 {# ========================================================================== #}
 {% block content %}
 	{% cache globally using key 'single-home' if not craft.app.config.general.devMode  %}
-		<div class="c-home js-appear">
-			{# HERO #}
-			{# <div class="l-container@viewport-9">
-				<div class="c-home__hero" style="background-image: url({{ entry.commonHeaderImage.one().url() ?? '' }})">
-				</div>
-			</div> #}
+		<div class="c-home">
+			{% if blocks is not empty %}
+				{% for section in blocks %}
+					{% switch section.type %}
+						{% case "mxHomeShootsBlock" %}
+							{% include "pages/home/partials/projects.twig" with {
+								section
+							} only %}
 
-			{% for section in entry.homeBodyBlocks.all() %}
-				{% if section.type == "mxHomeShootsBlock" %}
-					{% include "pages/home/partials/projects.twig" with {
-						data: section
-					} only %}
-				{% endif %}
-			{% endfor %}
+						{% case "mxHomeCta" %}
+							{% include "pages/home/partials/cta.twig" with {
+								section
+							} only %}
 
-			{% if entry.homeQuote ?? null %}
-				<div class="c-marquee">
-					<blockquote class="c-marquee__track">
-						{{entry.homeQuote|nl2br|replace("<br />", " •")}}
-						<span> •</span>
-						{{entry.homeQuote|nl2br|replace("<br />", " •")}}
-						<span> •</span>
-						{{entry.homeQuote|nl2br|replace("<br />", " •")}}
-						<span> •</span>
-					</blockquote>
-				</div>
+						{% case "mxHomeMarqueeBanner" %}
+							{% include "pages/home/partials/banner.twig" with {
+								section
+							} only %}
+					{% endswitch %}
+				{% endfor %}
 			{% endif %}
-
-			{% for section in entry.homeBodyBlocks.all() %}
-				{% if section.type == "mxHomeCta" %}
-					{% include "pages/home/partials/cta.twig" with {
-						data: section
-					} only %}
-				{% endif %}
-			{% endfor %}
 		</div>
 	{% endcache %}
 {% endblock %}

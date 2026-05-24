@@ -4,10 +4,14 @@
   position: relative;
   display: inline-block;
   width: auto;
-  margin-top: 4rem;
+  margin-block: 2rem;
 
   overflow: clip;
   white-space: nowrap;
+
+  @include respond-at(get-breakpoint("viewport-7")) {
+    margin-block: 4rem;
+  }
 
   &::before,
   &::after {
@@ -35,21 +39,9 @@
 }
 
 .c-marquee__track {
+  margin: 0;
   display: inline-block;
   animation: marquee 30s linear infinite;
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-33%);
-  }
-}
-
-.c-marquee__track {
-  margin: 2rem 0 0;
 
   font-size: 2rem;
   text-transform: uppercase;
@@ -62,5 +54,14 @@
 
   @include respond-at(get-breakpoint("viewport-9")) {
     font-size: 2.4rem;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33%);
   }
 }

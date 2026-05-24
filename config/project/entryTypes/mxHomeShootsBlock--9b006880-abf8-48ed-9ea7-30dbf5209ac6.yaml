@@ -8,41 +8,7 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: null
-            editCondition: null
-            elementCondition: null
-            fieldUid: 841f544c-33b2-4b34-b400-d8d2503d5680
-            handle: null
-            includeInCards: true
-            instructions: null
-            label: Title
-            providesThumbs: false
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ea8c792b-cc55-4497-b4b7-ea0ed264e34b
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: null
-            editCondition: null
-            elementCondition: null
-            fieldUid: e1d8c407-dd15-416f-999d-576c5c96be62 # Home Body Blocks - Home Shoots Block - Description
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: Description
-            providesThumbs: false
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 473e7475-7b9f-4b69-a5ca-a0003d611760
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: null
+            dateAdded: '2026-05-24T11:09:06+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: 1d54fa5c-6327-4b22-ab81-e7f629881ef0

@@ -1,69 +1,63 @@
 {# ========================================================================== #}
 {# :: Variables #}
 {# ========================================================================== #}
-{% set title = data.sectionTitle ?? null %}
-{% set description = data.sectionDescription ?? null %}
-{% set projects = data.sectionProjects.all() ?? null %}
+{% set projects = section.sectionProjects
+	.with(['commonHeaderImage'])
+	.all() ?? []
+%}
 
 {% set transform = {
-		mode: 'fit',
-		width: 800,
-		height: 800,
-		quality: 100,
-		position: 'center-center'
-	}
-%}
+	mode: 'fit',
+	width: 800,
+	height: 800,
+	quality: 100,
+	position: 'center-center'
+} %}
 
 {# ========================================================================== #}
 {# :: Component #}
 {# ========================================================================== #}
-<section class="l-container c-home__projects">
-	<header class="c-home__projects-header">
-		<h2 class="c-home__projects-title">
-			{{ title }}
+{% if projects is not empty %}
+	<section class="l-container c-spotlight">
+		<h2 class="c-spotlight__title">
+			Projecten in de spotlight
 		</h2>
 
-		<div class="c-home__projects-description">
-			{{ description }}
-		</div>
+		<ul class="c-spotlight__portfolio c-portfolio">
+			{% for album in projects %}
+				{% set image = album.commonHeaderImage.one() ?? null %}
+				{% set albumUrl = album.getUrl() ?? null %}
+				{% set albumTitle = album.commonTitle ?? null %}
+				{% set albumCategory = album.commonCategory ?? null %}
 
+				<li class="c-portfolio__item">
+					<a
+						class="c-portfolio__item-link"
+						href="{{ albumUrl }}"
+					>
+						<div class="c-portfolio__image-wrapper">
+							<img
+								class="c-portfolio__item-image"
+								src="{{ image.getUrl(transform) }}" alt="{{ image.title }}"
+							>
+						</div>
 
-		<div class="c-home__projects-actions">
-			<a class="c-button" href="/portfolio">
-				Volledig portfolio
-			</a>
-		</div>
-	</header>
-
-	<ul class="c-home__projects-portfolio c-portfolio">
-		{% for album in projects %}
-			<li class="c-portfolio__item">
-				<a
-					class="c-portfolio__item-link"
-					href="{{ album.getUrl() }}"
-				>
-					<div class="c-portfolio__image-wrapper">
-						<img
-							class="c-portfolio__item-image"
-							src="{{ album.commonHeaderImage.one().getUrl(transform) }}" alt="{{ album.commonHeaderImage.one().title }}"
-						>
-					</div>
-
-					<span class="c-portfolio__item-wrapper">
-						<span class="c-portfolio__item-title">
-							{{ album.commonTitle }}
-						</span>
-
-						<span class="c-portfolio__item-line"></span>
-
-						{% if album.commonCategory %}
-							<span class="c-portfolio__item-category">
-								{{ album.commonCategory }}
+						<span class="c-portfolio__item-wrapper">
+							<span class="c-portfolio__item-title">
+								{{albumTitle }}
 							</span>
-						{% endif %}
-					</span>
-				</a>
-			</li>
-		{% endfor %}
-	</ul>
-</section>
+
+							<span class="c-portfolio__item-line"></span>
+
+							{% if album.commonCategory %}
+								<span class="c-portfolio__item-category">
+									{{ albumCategory }}
+								</span>
+							{% endif %}
+						</span>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</section>
+{% endif %}

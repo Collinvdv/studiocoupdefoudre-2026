@@ -1,0 +1,36 @@
+// =============================================================================
+// :: Spotlight
+// =============================================================================
+.c-spotlight {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  margin-block: 2rem;
+
+  @include respond-at(get-breakpoint("viewport-7")) {
+    margin-block: 4rem;
+  }
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-spotlight__title {
+  /* Visually hide */
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c-spotlight__portfolio {
+  margin: 0 auto;
+  max-width: 88rem;
+  padding: 0;
+}
