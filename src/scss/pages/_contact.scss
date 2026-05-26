@@ -33,6 +33,16 @@
   color: var(--color-contrast);
   font-weight: bold;
 
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--color-accent);
+
+    .p-contact__icon {
+      transform: translateX(10%);
+    }
+  }
+
   @include respond-at(get-breakpoint("viewport-7")) {
     font-size: 4.8rem;
     gap: 0.8rem;
@@ -50,6 +60,8 @@
   align-items: center;
   width: 2rem;
   height: 2rem;
+
+  transition: transform 0.2s ease-in-out;
 
   @include respond-at(get-breakpoint("viewport-7")) {
     width: 3.8rem;
