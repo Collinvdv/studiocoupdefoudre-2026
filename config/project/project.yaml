@@ -1,4 +1,4 @@
-dateModified: 1779802579
+dateModified: 1779805025
 elementSources:
   craft\elements\Entry:
     -
@@ -63,7 +63,7 @@ meta:
     9b006880-abf8-48ed-9ea7-30dbf5209ac6: 'Home Shoots Block' # Home Shoots Block
     9b75ce17-ff83-4745-85bf-94feaea3ba6a: Prijzen # Prijzen
     9fed64cd-76db-4c1d-8b46-efc14490c4ce: Pages # Pages
-    21d787fa-27ea-4de6-ab7f-8e4b98bd35db: 'Studio paragraph 2' # Studio paragraph 2
+    21d787fa-27ea-4de6-ab7f-8e4b98bd35db: Text # Text
     23e5b070-68ff-4f00-b5da-29e2417cb874: Portfolio # Portfolio
     71ace60b-1def-4289-b954-835d70c7f96f: Title # Title
     272e77fc-88eb-4142-aad0-1f3a3d741998: category # category
@@ -73,7 +73,6 @@ meta:
     6095ed10-abc1-4ab5-861c-424b97e69d5e: Pages # Pages
     30092d52-d209-4de3-85da-178cb325cce7: 'Home Body Blocks' # Home Body Blocks
     0659686e-097b-4429-827c-0abdf454b88a: Seo # Seo
-    a1e53f92-6af3-411e-b427-42b37107382b: 'Studio quote' # Studio quote
     ae884c9b-35bc-4431-9dc2-251ae9126355: 'Home ' # Home 
     ba9b31ec-83c2-4cac-b044-75c03b304f5b: instagram # instagram
     bde2a3cf-1aa8-462a-8b97-25e95ae3e8c7: 'Studio Coup De Foudre' # Studio Coup De Foudre
@@ -82,7 +81,7 @@ meta:
     d8aa7887-5e88-4a51-b63d-6208bb283402: 'Portfolio Asset' # Portfolio Asset
     d327e0d4-c102-4266-9253-894927b5a8ca: Project # Project
     e1d8c407-dd15-416f-999d-576c5c96be62: 'Home Body Blocks - Home Shoots Block - Description' # Home Body Blocks - Home Shoots Block - Description
-    e47a706d-baae-4765-883f-bc8563ac1d71: 'Studio paragraph' # Studio paragraph
+    e47a706d-baae-4765-883f-bc8563ac1d71: Intro # Intro
     e563c9e2-beb0-4bee-8d8f-c5fd8926e90a: 'ContactData - ContactLink - URL' # ContactData - ContactLink - URL
     e2205919-9acf-471c-9998-3d318bb118f4: Body # Body
     eae364ff-53ba-4b06-a702-a0d3459d91de: 'Home Marquee Banner' # Home Marquee Banner

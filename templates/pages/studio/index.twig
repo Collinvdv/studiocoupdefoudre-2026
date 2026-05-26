@@ -7,45 +7,41 @@
 {# Variables #}
 {# ========================================================================== #}
 {% set activePage = "studio" %}
+{% set inverseColorScheme = true %}
+{% set title = "Over Studio Coup de Foudre" %}
 
 {# ========================================================================== #}
 {# Content #}
 {# ========================================================================== #}
 {% block content %}
-
 	{% cache globally using key 'single-studio' if not craft.app.config.general.devMode  %}
-		<section class="l-container l-split c-studio js-appear">
-			{% if entry.commonHeaderImage.one() %}
-				<div
-					class="l-split__item c-studio__image"
-					style="background-image: url({{entry.commonHeaderImage.one().url}})">
-					<img
-							class="u-hide"
-							src="{{entry.commonHeaderImage.one().url}}"
-							alt="Oeps, hier staat normaal een sfeerfoto!"
-							title=""
-					/>
+		<main class="l-container p-studio">
+			<h2 class="p-studio__title">{{ entry.commonTitle }}</h2>
+
+			{% if entry.studioParagraph1 %}
+				<div class="p-studio__intro">
+					{{ entry.studioParagraph1|markdown }}
 				</div>
 			{% endif %}
 
-			<div class="l-split__item l-split__item--right c-studio__content">
-				<h2 class="c-studio__title">{{ entry.commonTitle }}</h2>
-
-				{% if entry.studioParagraph1 %}
-					{{ entry.studioParagraph1|markdown }}
-				{% endif %}
-
-				{% if entry.studioQuote %}
-					<blockquote class="c-quote c-studio__quote">
-						{{ entry.studioQuote }}
-					</blockquote>
-				{% endif %}
-
-				{% if entry.studioParagraph2 %}
+			{% if entry.studioParagraph2 %}
+				<div class="p-studio__text">
 					{{ entry.studioParagraph2|markdown }}
-				{% endif %}
-			</div>
-		</section>
+				</div>
+			{% endif %}
+
+			{% if entry.commonHeaderImage.one() %}
+				<figure class="p-studio__figure">
+					<img
+						class="p-studio__image"
+						src="{{ entry.commonHeaderImage.one().url }}"
+						alt="Jente Van Pelt"
+					/>
+
+					<figcaption class="p-studio__caption">Jente Van Pelt</figcaption>
+				</figure>
+			{% endif %}
+		</main>
 	{% endcache %}
 
 {% endblock %}

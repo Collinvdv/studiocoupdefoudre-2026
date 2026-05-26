@@ -1,14 +1,12 @@
 columnSuffix: null
-contentColumnType: text
 handle: studioParagraph2
 instructions: null
-name: 'Studio paragraph 2'
+name: Text
 searchable: true
 settings:
   byteLimit: null
   charLimit: null
   code: false
-  columnType: text
   initialRows: 4
   multiline: true
   placeholder: null

@@ -1,41 +1,22 @@
+color: null
+description: null
 fieldLayouts:
   dbe91ffa-9934-4d9e-9c94-81070682199b:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: d4c563fb-fa54-475d-8b12-99e579b10287
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2026-05-26T13:57:18+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 71ace60b-1def-4289-b954-835d70c7f96f # Title
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -44,10 +25,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-05-26T13:57:18+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: e47a706d-baae-4765-883f-bc8563ac1d71 # Studio paragraph
+            fieldUid: e47a706d-baae-4765-883f-bc8563ac1d71 # Intro
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -56,10 +42,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-05-26T13:57:18+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: 21d787fa-27ea-4de6-ab7f-8e4b98bd35db # Studio paragraph 2
+            fieldUid: 21d787fa-27ea-4de6-ab7f-8e4b98bd35db # Text
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -68,22 +59,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            elementCondition: null
-            fieldUid: a1e53f92-6af3-411e-b427-42b37107382b # Studio quote
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e81a786f-ff69-4dd1-af64-5d97b4c4e36e
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2026-05-26T13:57:18+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 0df14fe0-bee1-457a-8cac-730a4358935f # Header Image
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -98,10 +82,15 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2026-05-26T13:57:18+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 0659686e-097b-4429-827c-0abdf454b88a # Seo
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -114,11 +103,12 @@ fieldLayouts:
         userCondition: null
 handle: pageStudio
 hasTitleField: false
+icon: null
 name: 'Page studio'
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

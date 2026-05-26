@@ -7,7 +7,7 @@
   font-size: 1.6rem;
   line-height: 1.2;
 
-  color: var(--ultramarine-700);
+  color: var(--color-contrast);
 
   @include respond-at(get-breakpoint("viewport-7")) {
     font-size: 1.8rem;
@@ -23,5 +23,5 @@
   font-size: 1.4rem;
   line-height: 1.2;
 
-  color: var(--ultramarine-700);
+  color: var(--color-contrast);
 }
