@@ -9,6 +9,7 @@
 {% set activePage = "contact" %}
 {% set inverseColorScheme = true %}
 {% set title = entry.commonTitle ?? "Contact" %}
+{% set titlePart2 = entry.commonTitle2 ?? null %}
 {% set description = entry.commonDescription ?? null %}
 {% set data = entry.contactData is defined
     ? entry.contactData.type(['contactLink']).all()
@@ -20,20 +21,33 @@
 {# ========================================================================== #}
 {% block content %}
 	{% cache globally using key 'single-contact' if not craft.app.config.general.devMode  %}
-		<section class="l-container">
-			<h1 class="">{{ title}}</h1>
+		<div class="l-container">
+			<h1 class="p-contact__title">
+				{{ title}}
+
+				{% if titlePart2 %}
+					<br> {{ titlePart2 }}
+				{% endif %}
+			</h1>
 
 			{% if description %}
-				<p class="">{{ description }}</p>
+				<div class="p-contact__description">{{ description }}</div>
 			{% endif %}
 
 			{% if data is not empty %}
 				{% for item in data %}
-					{% include "/_components/button" with {
-						link: item.contactURL ?? null
-					} only %}
+					{% set url = item.contactURL.getUrl() ?? '#' %}
+					{% set label = item.contactURL.label ?? null %}
+
+					<a class="p-contact__link" href="{{ url }}">
+						<span class="p-contact__icon">
+							{% include "_svg/arrow-right.svg" only %}
+						</span>
+
+						{{ label }}
+					</a>
 				{% endfor %}
 			{% endif %}
-		</section>
+		</div>
 	{% endcache %}
 {% endblock %}

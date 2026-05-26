@@ -1,53 +1,56 @@
+color: null
+description: null
 fieldLayouts:
   6e3255ed-c906-4c9c-99ba-5852941f48c6:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: ea2440c1-7a6c-4d5b-b0d5-494937a9b29f
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2026-05-26T13:34:14+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 71ace60b-1def-4289-b954-835d70c7f96f # Title
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 4f553c9f-1a6f-482e-8d76-379ce32d4eab
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
+            dateAdded: '2026-05-26T13:36:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 71ace60b-1def-4289-b954-835d70c7f96f # Title
+            handle: commonTitle2
+            includeInCards: false
+            instructions: null
+            label: 'Title line 2'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d7dc348-c967-49c0-a05f-9d2ea839eb2a
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-05-26T13:34:14+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 5705b456-77ec-47e8-8e23-19798b3e4884 # Description
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -56,10 +59,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-05-26T13:34:14+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 951be517-f918-4494-b1f0-db3ffbd712f1 # ContactData
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -74,10 +82,15 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2026-05-26T13:34:14+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 0659686e-097b-4429-827c-0abdf454b88a # Seo
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -90,11 +103,12 @@ fieldLayouts:
         userCondition: null
 handle: contact
 hasTitleField: false
+icon: null
 name: Contact
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
