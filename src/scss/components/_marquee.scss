@@ -19,7 +19,7 @@
     position: absolute;
     width: var(--marquee-pseudo-width);
     height: 100%;
-    background-image: linear-gradient(to right, $sand, transparent);
+    background-image: linear-gradient(to right, var(--sand), transparent);
     top: 0;
     left: 0;
     z-index: 1;
@@ -27,7 +27,7 @@
 
   &::after {
     left: calc(100vw - var(--marquee-pseudo-width));
-    background-image: linear-gradient(to left, $sand, transparent);
+    background-image: linear-gradient(to left, var(--sand), transparent);
   }
 
   @include respond-at(get-breakpoint("viewport-7")) {
@@ -50,7 +50,7 @@
 
   width: 100%;
 
-  color: $bubblegum;
+  color: var(--bubblegum);
 
   @include respond-at(get-breakpoint("viewport-9")) {
     font-size: 2.4rem;

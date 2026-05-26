@@ -9,7 +9,7 @@
 
   background-image: linear-gradient(
     to right,
-    $ultramarine-100 50%,
+    var(--ultramarine-100) 50%,
     $grey-light 50%
   );
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
     background-position 0.3s ease-in-out;
 
   &:hover {
-    color: $ultramarine-100;
+    color: var(--ultramarine-100);
     background-position: 0 calc(100% - 0.1rem);
 
     .c-link__icon {
@@ -56,7 +56,11 @@
 .c-link--primary {
   font-weight: bold;
 
-  background-image: linear-gradient(to right, $ultramarine-100 50%, $black 50%);
+  background-image: linear-gradient(
+    to right,
+    var(--ultramarine-100) 50%,
+    $black 50%
+  );
 }
 
 .c-link--back {
@@ -64,7 +68,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 
-  color: $ultramarine-100;
+  color: var(--ultramarine-100);
   background-image: none;
 
   .c-link__icon {

@@ -3,6 +3,7 @@
 {# ========================================================================== #}
 {% set title = title ?? NULL %}
 {% set description = description ?? NULL %}
+{% set shapes = shapes ?? true %}
 
 {# ========================================================================== #}
 {# :: Component #}
@@ -12,6 +13,8 @@
 		<h1 class="u-hide">{{title}}</h1>
 	{% endif %}
 
-	{% include '/_components/nav' %}
+	{% include '/_components/nav' with {
+		shapes
+	} %}
 </header>
 

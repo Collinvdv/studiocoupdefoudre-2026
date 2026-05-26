@@ -17,7 +17,7 @@
   display: block;
   width: 2.4rem;
   height: 2.4rem;
-  color: $ultramarine-700;
+  color: var(--ultramarine-700);
 }
 
 .c-socials__icon {
@@ -32,7 +32,7 @@
 
   &:hover {
     svg {
-      fill: $ultramarine-100;
+      fill: var(--ultramarine-100);
     }
   }
 }

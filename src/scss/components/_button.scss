@@ -16,7 +16,7 @@
   letter-spacing: 0.1rem;
   line-height: 1;
   color: $white;
-  background-color: $ultramarine-700;
+  background-color: var(--ultramarine-700);
 
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
@@ -44,6 +44,6 @@
   font-family: $font-family-primary;
   font-size: 2rem;
   line-height: 1;
-  color: $ultramarine-700;
+  color: var(--ultramarine-700);
   background-color: $white;
 }

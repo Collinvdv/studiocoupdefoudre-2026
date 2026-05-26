@@ -7,9 +7,6 @@ $grey-middle: hsla(0, 0%, 46%, 1);
 $grey-light: hsla(0, 0%, 90%, 1);
 $grey-extra-light: hsla(0, 0%, 95%, 1);
 $white: hsla(0, 0%, 100%, 1);
-// $red: #fd3443;
-// $pink: pink;
-// $yellow: #fee367;
 
 // =============================================================================
 // Colors - brand update 2026
@@ -19,3 +16,17 @@ $ultramarine-400: #574fcc;
 $ultramarine-100: #a29ded;
 $sand: #f7e9d4;
 $bubblegum: #f893b6;
+
+:root {
+  // Color stack
+  --ultramarine-700: #10069f;
+  --ultramarine-400: #574fcc;
+  --ultramarine-100: #a29ded;
+  --sand: #f7e9d4;
+  --bubblegum: #f893b6;
+
+  // Contextual
+  --color-base: var(--sand);
+  --color-contrast: var(--ultramarine-700);
+  --color-accent: var(--bubblegum);
+}

@@ -1,10 +1,16 @@
+{% set inverseColorScheme = inverseColorScheme ?? false %}
+{% set bodyClasses = inverseColorScheme ?? false
+	? "scheme-inverse"
+	: ""
+%}
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="nl-BE" id="html">
 
 	{% include '/_base/head'%}
 
-	<body id="body">
+	<body id="body" class="{{ bodyClasses }}">
 
 		{% if craft.app.config.env == 'production' %}
 			<!-- Google Tag Manager (noscript) -->
@@ -14,7 +20,9 @@
 		{% endif %}
 
 		<div class="l-page">
-			{% include '/_components/header' %}
+			{% include '/_components/header' with {
+				shapes: not (inverseColorScheme ?? false)
+			} %}
 
 			{% minify %}
 				{% block content %}

@@ -40,8 +40,8 @@ body {
 
   overflow-x: hidden;
 
-  color: $ultramarine-700;
-  background-color: $sand;
+  color: var(--color-contrast);
+  background-color: var(--color-base);
 
   &.has-nav-open {
     height: 100vh;
@@ -49,7 +49,7 @@ body {
   }
 
   ::selection {
-    background-color: $ultramarine-700;
-    color: $white;
+    background-color: var(--color-contrast);
+    color: var(--color-accent);
   }
 }
