@@ -71,13 +71,14 @@
 
 .c-nav__link {
   position: relative;
-  padding: var(--nav-padding);
+  padding-block: var(--nav-padding);
+  padding-inline: 0.7rem;
   display: flex;
 
   font-family: $font-family-secondary;
   color: var(--color-contrast);
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.03rem;
   transition: color 0.3s ease-in-out;
@@ -90,6 +91,8 @@
 
   @include respond-at(get-breakpoint("viewport-4")) {
     font-size: 1.5rem;
+    padding-inline: var(--nav-padding);
+    font-size: 1.4rem;
   }
 
   @include respond-at(get-breakpoint("viewport-7")) {

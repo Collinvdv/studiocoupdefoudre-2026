@@ -30,9 +30,9 @@
 				{{ entry.commonDescription }}
 
 				<div class="c-header__actions">
-					<a class="c-button" href="{{ entry.commonLink }}">
-						{{entry.commonLink.label}}
-					</a>
+					{% include "/_components/button" with {
+						link: entry.commonLink ?? null
+					} only %}
 				</div>
 			</header>
 
