@@ -53,9 +53,9 @@
 // =============================================================================
 @import "components/_footer", "components/_link", "components/_hamburger",
   "components/_header", "components/_nav", "components/marquee",
-  "components/_quote", "components/_spotlight", "components/_gallery",
-  "components/_socials", "components/_prijzen", "components/_portfolio",
-  "components/_prijs", "components/_button", "components/_cta";
+  "components/_spotlight", "components/_gallery", "components/_socials",
+  "components/_prijzen", "components/_portfolio", "components/_prijs",
+  "components/_button", "components/_cta";
 
 // =============================================================================
 // :: Pages
@@ -65,4 +65,4 @@
 // =============================================================================
 // :: Scopes
 // =============================================================================
-@import "scopes/_wysiwyg-header", "scopes/scheme-inverse";
+@import "scopes/scheme-inverse";

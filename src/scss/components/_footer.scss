@@ -23,8 +23,10 @@
 }
 
 .c-footer__text {
-  @include respond-to(get-breakpoint("viewport-7")) {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
+
+  @include respond-at(get-breakpoint("viewport-7")) {
+    font-size: 1.5rem;
   }
 }
 

@@ -23,8 +23,8 @@
 {% block content %}
 
 	{% cache globally using key 'single-prijzen' if not craft.app.config.general.devMode  %}
-		<section class="l-container js-appear">
-			<header class="c-header s-wysiwyg-header">
+		<section class="l-container">
+			<header class="c-header">
 				<h1 class="c-header__title">{{ entry.commonTitle }}</h1>
 
 				{{ entry.commonDescription }}

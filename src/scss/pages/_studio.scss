@@ -2,9 +2,86 @@
 // :: Studio page
 // =============================================================================
 .p-studio {
-  background: yellow;
+  display: grid;
+  gap: 2.4rem;
+  margin-top: 4rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "title"
+    "intro"
+    "text"
+    "figure";
+
+  @include respond-at(get-breakpoint("viewport-7")) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "title title title"
+      "intro intro intro"
+      "figure text text";
+
+    margin-top: 6.4rem;
+  }
+
+  @include respond-at(get-breakpoint("viewport-9")) {
+    grid-template-areas:
+      "figure title title"
+      "figure intro intro"
+      "figure text text"
+      "figure . .";
+
+    gap: 2.4rem 3.2rem;
+    margin-top: 8rem;
+  }
+
+  @include respond-at(get-breakpoint("viewport-12")) {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      "figure figure figure title title title title title title . . ."
+      "figure figure figure intro intro intro text text text text text text"
+      "figure figure figure . . . . . . . . .";
+  }
 }
 
 // =============================================================================
 // :: Elements
 // =============================================================================
+.p-studio__title {
+  @include extend-h1-base();
+
+  grid-area: title;
+}
+
+.p-studio__intro {
+  grid-area: intro;
+
+  p {
+    font-size: 2.2rem;
+
+    @include respond-at(get-breakpoint("viewport-7")) {
+      font-size: 2.4rem;
+    }
+
+    @include respond-at(get-breakpoint("viewport-9")) {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+.p-studio__text {
+  grid-area: text;
+
+  p + p {
+    margin-top: 1.2rem;
+  }
+}
+
+.p-studio__figure {
+  grid-area: figure;
+  margin: 0;
+}
+
+.p-studio__caption {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--ultramarine-100);
+}
