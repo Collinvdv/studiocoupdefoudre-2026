@@ -1,6 +1,5 @@
 {
     "/web/assets/js/main.js": "/web/assets/js/main.js",
-    "/web/assets/css/main.css": "/web/assets/css/main.css",
     "/web/assets/images/bottom-shapes-pink.svg": "/web/assets/images/bottom-shapes-pink.svg",
     "/web/assets/images/bottom-shapes_pink.svg": "/web/assets/images/bottom-shapes_pink.svg",
     "/web/assets/images/favicon/apple-touch-icon.png": "/web/assets/images/favicon/apple-touch-icon.png",
@@ -26,5 +25,6 @@
     "/web/assets/images/footer-pink_shape-2.svg": "/web/assets/images/footer-pink_shape-2.svg",
     "/web/assets/images/header-shapes.svg": "/web/assets/images/header-shapes.svg",
     "/web/assets/images/pink-blob.svg": "/web/assets/images/pink-blob.svg",
-    "/web/assets/images/studio-coup-de-foudre_logo.jpg": "/web/assets/images/studio-coup-de-foudre_logo.jpg"
+    "/web/assets/images/studio-coup-de-foudre_logo.jpg": "/web/assets/images/studio-coup-de-foudre_logo.jpg",
+    "/web/assets/css/main.css": "/web/assets/css/main.css"
 }

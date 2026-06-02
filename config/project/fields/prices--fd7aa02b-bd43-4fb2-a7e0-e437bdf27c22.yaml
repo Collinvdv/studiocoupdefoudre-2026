@@ -7,7 +7,7 @@ searchable: true
 settings:
   entryTypes:
     -
-      uid: f870c87b-30ca-4712-a9c8-b5f3733db928
+      uid: f870c87b-30ca-4712-a9c8-b5f3733db928 # prizeBlock
   maxEntries: null
   minEntries: null
   propagationKeyFormat: null

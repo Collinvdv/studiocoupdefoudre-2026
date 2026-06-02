@@ -36,7 +36,7 @@
   @include respond-at(get-breakpoint("viewport-12")) {
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
-      "figure figure figure title title title title title title . . ."
+      "figure figure figure title title title title title title title . ."
       "figure figure figure intro intro intro text text text text text text"
       "figure figure figure . . . . . . . . .";
   }

@@ -1,0 +1,53 @@
+// =============================================================================
+// :: Prices
+// =============================================================================
+.p-prices {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6.4rem;
+
+  @include respond-at(get-breakpoint("viewport-7")) {
+    margin-top: 6.4rem;
+  }
+
+  @include respond-at(get-breakpoint("viewport-9")) {
+    margin-top: 8rem;
+  }
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.p-prices__intro {
+  p {
+    font-size: 2.2rem;
+
+    @include respond-at(get-breakpoint("viewport-7")) {
+      font-size: 2.4rem;
+    }
+
+    @include respond-at(get-breakpoint("viewport-9")) {
+      font-size: 2.6rem;
+    }
+  }
+
+  a {
+    color: currentColor;
+    text-decoration: underline solid 0.15rem;
+    text-underline-offset: 0.3rem;
+
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}
+
+.p-price__list {
+  @include extend-list-clear();
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}

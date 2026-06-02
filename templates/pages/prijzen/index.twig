@@ -7,6 +7,8 @@
 {# :: Variables #}
 {# ========================================================================== #}
 {% set activePage = "prijzen" %}
+{% set title = "Prijzen" %}
+{% set prices = entry.prices.all() ?? [] %}
 {% set inverseColorScheme = true %}
 {% set transform = {
 		mode: 'fit',
@@ -21,50 +23,27 @@
 {# Content #}
 {# ========================================================================== #}
 {% block content %}
-
 	{% cache globally using key 'single-prijzen' if not craft.app.config.general.devMode  %}
-		<section class="l-container">
-			<header class="c-header">
-				<h1 class="c-header__title">{{ entry.commonTitle }}</h1>
-
-				{{ entry.commonDescription }}
-
-				<div class="c-header__actions">
-					{% include "/_components/button" with {
-						link: entry.commonLink ?? null
-					} only %}
+		<main class="l-container p-prices">
+			{% if entry.commonDescription %}
+				<div class="p-prices__intro">
+					{{ entry.commonDescription|markdown }}
 				</div>
-			</header>
+			{% endif %}
 
-			<div class="c-prijzen">
-				{% for item in entry.prices.all() %}
-					<article class="c-prijs">
-						{% if item.priceImage.one() %}
-							<div
-								class="c-prijs__image"
-								style="background-image: url({{item.priceImage.one().getUrl(transform)}})">
-								<img
-									class="u-hide"
-									src="{{item.priceImage.one().getUrl(transform)}}"
-								/>
-							</div>
-						{% endif %}
+			<ul class="p-price__list">
+				{% for item in prices %}
+					<li class="c-price">
+						<p class="c-price__meta">
+							<strong class="c-price__title">{{item.priceTitle}}</strong>
 
-						<h3 class="c-prijs__title">{{item.priceTitle}}</h3>
-
-						<p class="c-prijs__meta">
-							<span class="c-prijs__duration">{{item.priceDuration}}</span>
-
-							<span class="c-prijs__amount">€ {{item.priceAmount}}</span>
+							<span class="c-price__duration">{{item.priceDuration}}</span>
 						</p>
 
-						{% if item.priceInfo %}
-							<p class="c-prijs__info">{{item.priceInfo}}</p>
-						{% endif %}
-					</article>
+						<p class="c-price__amount">{{item.priceAmount}}</p>
+					</li>
 				{% endfor %}
-			</div>
-		</section>
+			</ul>
+		</main>
 	{% endcache %}
-
 {% endblock %}

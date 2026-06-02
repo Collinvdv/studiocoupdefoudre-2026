@@ -1,4 +1,4 @@
-dateModified: 1779805025
+dateModified: 1780402467
 elementSources:
   craft\elements\Entry:
     -
@@ -88,6 +88,7 @@ meta:
     ef6f29f0-9c10-4f94-99e9-24d3aaea6646: Projects # Projects
     f7c329e7-b989-4b22-97c9-0e761c4d5d81: linkedIn # linkedIn
     f31da9ea-4646-4253-8396-66574a04e1e0: 'Portfolio Albums' # Portfolio Albums
+    f870c87b-30ca-4712-a9c8-b5f3733db928: prizeBlock # prizeBlock
     fc09fd9c-5a1a-4c16-97e8-a208d962d92b: 'Studio Coup De Foudre' # Studio Coup De Foudre
     fd7aa02b-bd43-4fb2-a7e0-e437bdf27c22: prices # prices
     fde1d573-5ad7-4641-ac13-84f8f4f115ff: Portfolio # Portfolio
