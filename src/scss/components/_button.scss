@@ -2,6 +2,8 @@
 // :: Button
 // =============================================================================
 .c-button {
+  position: relative;
+  overflow: hidden;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -13,11 +15,49 @@
   font-size: 2.4rem;
   line-height: 1;
   color: var(--ultramarine-700);
-  background-color: var(--white);
+  z-index: 0;
+
+  transition: color 0.3s ease-in-out;
 
   cursor: pointer;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    border-radius: inherit;
+    z-index: -2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 200%;
+    aspect-ratio: 1;
+
+    left: 0;
+    top: 75%;
+    border-radius: 100%;
+    background-color: var(--ultramarine-700);
+
+    transform: translate(-100%, 10%);
+    transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+
+    z-index: -1;
+  }
+
   &:hover {
+    color: var(--white);
+
+    &::before {
+      transform: translate(-25%, -50%);
+    }
+
     .c-button__icon {
       transform: translateX(25%);
     }
@@ -38,7 +78,10 @@
 // :: Modifiers
 // =============================================================================
 .c-button--outline {
-  background-color: transparent;
   border: solid 0.3rem var(--white);
   color: var(--ultramarine-700);
+
+  &::after {
+    display: none;
+  }
 }
