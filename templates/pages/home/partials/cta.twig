@@ -33,7 +33,8 @@
 
 				{% if linkSecondary %}
 					{% include "/_components/button" with {
-						link: linkSecondary
+						link: linkSecondary,
+						modifiers: "c-button--outline"
 					} only %}
 				{% endif %}
 			</div>

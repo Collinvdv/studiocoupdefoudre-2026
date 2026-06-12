@@ -3,7 +3,7 @@
 {# ========================================================================== #}
 {% set url = url ?? link.getUrl() ?? '#' %}
 {% set label = label ?? link.label ?? null %}
-{% set modifiers = "" %}
+{% set modifiers = modifiers|default("") %}
 
 {# ========================================================================== #}
 {# :: Component #}
@@ -12,6 +12,8 @@
 	<a class="c-button {{ modifiers }}" href="{{ url }}">
 		{{ label }}
 
-		{% include "_svg/arrow-right.svg" only %}
+		{{ svg('@templates/_svg/arrow-right.svg')|attr({
+			class: 'c-button__icon'
+		}) }}
 	</a>
 {% endif %}
