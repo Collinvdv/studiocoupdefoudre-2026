@@ -2,10 +2,54 @@
 // :: Price
 // =============================================================================
 .c-price {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 1.2rem;
   border-bottom: var(--color-contrast) solid 0.1rem;
+  align-items: start;
+
+  @include respond-at(get-breakpoint("viewport-12")) {
+    border-bottom: none;
+    justify-content: start;
+    gap: 0.8rem;
+  }
 }
 
 // =============================================================================
 // :: Elements
 // =============================================================================
+.c-price__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  font-size: 1.6rem;
+
+  @include respond-at(get-breakpoint("viewport-12")) {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    flex: 1 1 50%;
+
+    &::after {
+      content: "";
+      height: 0.1rem;
+      flex: 1;
+
+      background-color: var(--color-contrast);
+    }
+  }
+}
+
+.c-price__title {
+  font-weight: bold;
+}
+
+.c-price__duration {
+  font-style: italic;
+}
+
+.c-price__amount {
+  font-size: 1.6rem;
+  text-align: right;
+}

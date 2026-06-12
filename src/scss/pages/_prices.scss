@@ -9,10 +9,14 @@
 
   @include respond-at(get-breakpoint("viewport-7")) {
     margin-top: 6.4rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
   }
 
   @include respond-at(get-breakpoint("viewport-9")) {
+    gap: 2.4rem;
     margin-top: 8rem;
+    grid-template-columns: repeat(12, 1fr);
   }
 }
 
@@ -24,11 +28,11 @@
     font-size: 2.2rem;
 
     @include respond-at(get-breakpoint("viewport-7")) {
-      font-size: 2.4rem;
+      font-size: 2.6rem;
     }
 
     @include respond-at(get-breakpoint("viewport-9")) {
-      font-size: 2.6rem;
+      font-size: 3.2rem;
     }
   }
 
@@ -43,6 +47,10 @@
       color: var(--color-accent);
     }
   }
+
+  @include respond-at(get-breakpoint("viewport-9")) {
+    grid-column: 1 / 7;
+  }
 }
 
 .p-price__list {
@@ -50,4 +58,8 @@
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+
+  @include respond-at(get-breakpoint("viewport-9")) {
+    grid-column: 8 / 13;
+  }
 }
