@@ -13,10 +13,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: f31da9ea-4646-4253-8396-66574a04e1e0 # Portfolio Albums
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -36,10 +34,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 71ace60b-1def-4289-b954-835d70c7f96f # Title
             handle: null
-            includeInCards: false
             instructions: ' '
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -53,10 +49,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 5705b456-77ec-47e8-8e23-19798b3e4884 # Description
             handle: null
-            includeInCards: false
             instructions: ' '
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -70,10 +64,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 4ba47aec-1758-4437-bcd2-775fc3066311 # Link
             handle: null
-            includeInCards: false
             instructions: ' '
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -93,10 +85,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 0659686e-097b-4429-827c-0abdf454b88a # Seo
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

@@ -1,10 +1,10 @@
 {
   "require": {
-    "craftcms/ckeditor": "^4.0",
-    "craftcms/cms": "^5.0",
+    "craftcms/ckeditor": "^5.0",
+    "craftcms/cms": "^5.11",
     "ether/seo": "^5.0",
     "nystudio107/craft-minify": "^5.0",
-    "vlucas/phpdotenv": "^5.4"
+    "vlucas/phpdotenv": "^5.8"
   },
   "autoload": {
     "psr-4": {
@@ -15,7 +15,7 @@
     "sort-packages": true,
     "optimize-autoloader": true,
     "platform": {
-      "php": "8.2"
+      "php": "8.5"
     },
     "allow-plugins": {
       "yiisoft/yii2-composer": true,

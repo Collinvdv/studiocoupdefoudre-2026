@@ -7,7 +7,7 @@ searchable: true
 settings:
   entryTypes:
     -
-      uid: fb5b6517-5fea-4a50-8eb4-e8e01cd9903f
+      uid: fb5b6517-5fea-4a50-8eb4-e8e01cd9903f # Text
   maxEntries: null
   minEntries: null
   propagationKeyFormat: null

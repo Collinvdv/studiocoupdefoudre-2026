@@ -5,6 +5,7 @@ entryTypes:
     uid: 4f9a5ad9-0f0f-415b-a5bf-2345427435bb # Page studio
 handle: pageStudio
 maxAuthors: 1
+minAuthors: 1
 name: 'Page studio'
 previewTargets:
   -

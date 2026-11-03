@@ -13,10 +13,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 1d54fa5c-6327-4b22-ab81-e7f629881ef0
             handle: null
-            includeInCards: false
             instructions: null
             label: Projects
-            providesThumbs: true
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -27,6 +25,7 @@ fieldLayouts:
         name: Content
         uid: 16955ca2-9227-4746-bde1-6fb555375e8e
         userCondition: null
+    thumbFieldKey: 'layoutElement:ef072af2-463a-47e2-a5bf-6b5d220f073a'
 handle: mxHomeShootsBlock
 hasTitleField: false
 icon: null

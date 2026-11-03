@@ -5,6 +5,7 @@ entryTypes:
     uid: 9b75ce17-ff83-4745-85bf-94feaea3ba6a # Prijzen
 handle: pagePrijzen
 maxAuthors: 1
+minAuthors: 1
 name: Prijzen
 previewTargets:
   -

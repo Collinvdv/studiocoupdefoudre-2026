@@ -1,7 +1,7 @@
 name: studiocoupdefoudre
 type: craftcms
 docroot: web
-php_version: "8.2"
+php_version: "8.5"
 webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames: []
@@ -15,6 +15,7 @@ hooks:
 use_dns_when_possible: true
 composer_version: ""
 web_environment: []
+nodejs_version: "20.20.2"
 corepack_enable: false
 
 # Key features of DDEV's config.yaml:

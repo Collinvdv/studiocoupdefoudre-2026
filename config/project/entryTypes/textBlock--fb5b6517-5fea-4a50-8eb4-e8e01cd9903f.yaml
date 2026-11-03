@@ -3,6 +3,8 @@ description: null
 fieldLayouts:
   b7ab8542-2237-4692-8c4e-ec6cabd82494:
     cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:b004d7be-9459-476e-8133-e24c1e307e87'
     tabs:
       -
         elementCondition: null
@@ -13,10 +15,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: b9df10f2-906f-43d9-9e4e-e007f0e8ad6c
             handle: null
-            includeInCards: true
             instructions: null
             label: 'Block title'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -30,10 +30,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 9d779578-007f-456b-9580-e09ce5e9172e
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Block description'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -47,10 +45,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 5e9a4110-a80c-4b73-b085-7e3debc0655d # Body - Text - Text content
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Text content'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

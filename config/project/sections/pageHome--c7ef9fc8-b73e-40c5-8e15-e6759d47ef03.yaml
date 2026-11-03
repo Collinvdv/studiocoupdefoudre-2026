@@ -2,10 +2,11 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: ae884c9b-35bc-4431-9dc2-251ae9126355 # Home 
+    uid: ae884c9b-35bc-4431-9dc2-251ae9126355 # Home
 handle: pageHome
 maxAuthors: 1
-name: 'Home '
+minAuthors: 1
+name: Home
 previewTargets:
   -
     label: 'Primary entry page'

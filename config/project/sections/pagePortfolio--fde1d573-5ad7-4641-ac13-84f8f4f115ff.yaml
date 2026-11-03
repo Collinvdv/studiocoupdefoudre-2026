@@ -5,6 +5,7 @@ entryTypes:
     uid: 23e5b070-68ff-4f00-b5da-29e2417cb874 # Portfolio
 handle: pagePortfolio
 maxAuthors: 1
+minAuthors: 1
 name: Portfolio
 previewTargets:
   -

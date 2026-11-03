@@ -13,10 +13,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: e563c9e2-beb0-4bee-8d8f-c5fd8926e90a # ContactData - ContactLink - URL
             handle: null
-            includeInCards: false
             instructions: null
             label: URL
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

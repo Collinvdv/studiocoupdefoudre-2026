@@ -1,4 +1,4 @@
-dateModified: 1780402467
+dateModified: 1793710413
 elementSources:
   craft\elements\Entry:
     -
@@ -51,12 +51,12 @@ meta:
     2e3a0ad8-08a3-4ce9-9bda-96e9b4d9a610: 'Home Body Blocks - Home Call To Action - Link' # Home Body Blocks - Home Call To Action - Link
     2ebc2daa-e69f-4b13-a4a1-6d9b87d01f6e: 'Home Body Blocks - Home Call To Action - Description' # Home Body Blocks - Home Call To Action - Description
     3ae2e51c-b879-4f21-a747-814295464955: 'Home Call To Action' # Home Call To Action
+    04a0b3f3-a5f0-462b-ad79-2e6215a7a30d: ContactText # ContactText
     4b208ae3-3d27-494e-bb91-a1e90c40e60b: Prijzen # Prijzen
     4ba47aec-1758-4437-bcd2-775fc3066311: Link # Link
     4e25e487-28cf-4e1e-b66d-fea22aca3536: 'Volume Images' # Volume Images
     4f9a5ad9-0f0f-415b-a5bf-2345427435bb: 'Page studio' # Page studio
     5e9a4110-a80c-4b73-b085-7e3debc0655d: 'Body - Text - Text content' # Body - Text - Text content
-    6d56170c-d50e-4ff0-871e-3fed9d57577c: Simple # Simple
     6ee4bdf6-4e21-4495-babe-78e825374c89: 'Public Schema' # Public Schema
     7f396182-7dff-4f06-bbfe-f9d63eff76f1: Contact # Contact
     9a58a80f-9c56-4570-a88d-9e28b651f603: Contact # Contact
@@ -72,12 +72,13 @@ meta:
     5705b456-77ec-47e8-8e23-19798b3e4884: Description # Description
     6095ed10-abc1-4ab5-861c-424b97e69d5e: Pages # Pages
     30092d52-d209-4de3-85da-178cb325cce7: 'Home Body Blocks' # Home Body Blocks
+    44915fd9-6407-425f-ae46-c86aeb7ab484: ContactLink # ContactLink
     0659686e-097b-4429-827c-0abdf454b88a: Seo # Seo
-    ae884c9b-35bc-4431-9dc2-251ae9126355: 'Home ' # Home 
+    ae884c9b-35bc-4431-9dc2-251ae9126355: 'Home ' # Home
     ba9b31ec-83c2-4cac-b044-75c03b304f5b: instagram # instagram
     bde2a3cf-1aa8-462a-8b97-25e95ae3e8c7: 'Studio Coup De Foudre' # Studio Coup De Foudre
     c6d1d963-d527-4046-bd18-85231610b895: 'Secondary link' # Secondary link
-    c7ef9fc8-b73e-40c5-8e15-e6759d47ef03: 'Home ' # Home 
+    c7ef9fc8-b73e-40c5-8e15-e6759d47ef03: Home # Home
     d8aa7887-5e88-4a51-b63d-6208bb283402: 'Portfolio Asset' # Portfolio Asset
     d327e0d4-c102-4266-9253-894927b5a8ca: Project # Project
     e1d8c407-dd15-416f-999d-576c5c96be62: 'Home Body Blocks - Home Shoots Block - Description' # Home Body Blocks - Home Shoots Block - Description
@@ -89,6 +90,7 @@ meta:
     f7c329e7-b989-4b22-97c9-0e761c4d5d81: linkedIn # linkedIn
     f31da9ea-4646-4253-8396-66574a04e1e0: 'Portfolio Albums' # Portfolio Albums
     f870c87b-30ca-4712-a9c8-b5f3733db928: prizeBlock # prizeBlock
+    fb5b6517-5fea-4a50-8eb4-e8e01cd9903f: Text # Text
     fc09fd9c-5a1a-4c16-97e8-a208d962d92b: 'Studio Coup De Foudre' # Studio Coup De Foudre
     fd7aa02b-bd43-4fb2-a7e0-e437bdf27c22: prices # prices
     fde1d573-5ad7-4641-ac13-84f8f4f115ff: Portfolio # Portfolio
@@ -96,7 +98,7 @@ plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0.0
+    schemaVersion: 5.6.0.0
   minify:
     edition: standard
     enabled: true
@@ -135,7 +137,7 @@ system:
   edition: solo
   live: true
   name: 'coup de foudre'
-  schemaVersion: 5.8.0.3
+  schemaVersion: 5.11.0.2
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

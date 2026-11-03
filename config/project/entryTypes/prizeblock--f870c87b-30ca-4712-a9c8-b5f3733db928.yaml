@@ -3,6 +3,8 @@ description: null
 fieldLayouts:
   33036f91-b72f-4e7d-b593-953e9e124374:
     cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:e7852620-f8c4-4f1b-8dd3-e734539ceb0d'
     tabs:
       -
         elementCondition: null
@@ -13,10 +15,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: e3b2fba9-5526-48bf-b232-78b34432c257
             handle: null
-            includeInCards: true
             instructions: null
             label: 'Price title'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -30,10 +30,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 47976d96-cdc0-4289-ae5a-c365220337f4
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Price duration'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -47,10 +45,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 0a254298-83e7-4b9a-b91c-3e0746533fa0
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Price amount'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
