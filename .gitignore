@@ -78,7 +78,6 @@ config.codekit3
 prepros-6.config
 
 package-lock.json
-composer.lock
 config/license.key
 # Local asset backups
 /web/assets.zip
